@@ -304,7 +304,8 @@ h3 {
 .feature-section,
 .screens-section,
 .privacy-section,
-.install-section {
+.install-section,
+.support-section {
   width: min(1180px, calc(100% - 3rem));
   margin: 0 auto;
 }
@@ -575,6 +576,44 @@ figcaption {
   background: rgb(255 255 255 / 16%);
 }
 
+.support-section {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 2rem;
+  align-items: center;
+  margin-top: 1.5rem;
+  padding: 2rem;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.support-section p:not(.eyebrow) {
+  max-width: 680px;
+  margin: 1rem 0 0;
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
+.support-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.8rem;
+}
+
+.liberapay-badge {
+  display: inline-flex;
+  align-items: center;
+  min-height: 3rem;
+  line-height: 0;
+}
+
+.liberapay-badge img {
+  display: block;
+}
+
 .site-footer {
   display: flex;
   align-items: center;
@@ -625,7 +664,8 @@ figcaption {
 
   .section-intro,
   .privacy-section,
-  .install-section {
+  .install-section,
+  .support-section {
     grid-template-columns: 1fr;
   }
 
@@ -720,6 +760,7 @@ figcaption {
   .screens-section,
   .privacy-section,
   .install-section,
+  .support-section,
   .site-footer {
     width: min(100% - 2rem, 1180px);
   }
@@ -730,7 +771,8 @@ figcaption {
   }
 
   .privacy-section,
-  .install-section {
+  .install-section,
+  .support-section {
     padding: 1.4rem;
   }
 
@@ -749,6 +791,11 @@ figcaption {
 
   .install-section {
     margin-top: 4rem;
+  }
+
+  .support-actions {
+    align-items: stretch;
+    justify-content: flex-start;
   }
 
   .install-card {

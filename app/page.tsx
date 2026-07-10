@@ -6,6 +6,8 @@ const installUrl = `${docsUrl}/app/install`
 const privacyUrl = `${docsUrl}/app/privacy`
 const supportUrl = `${docsUrl}/support`
 const codeUrl = 'https://codeberg.org/OpenVitals/android-app'
+const translateUrl = 'https://translate.codeberg.org/projects/openvitals/android-app/'
+const liberapayUrl = 'https://liberapay.com/manuel.mmarca.tech/donate'
 const releasesUrl = `${codeUrl}/releases`
 const playStoreUrl =
   'https://play.google.com/store/apps/details?id=tech.mmarca.openvitals'
@@ -324,6 +326,37 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="support-section" aria-labelledby="support-heading">
+        <div>
+          <p className="eyebrow">Support the project</p>
+          <h2 id="support-heading">Help OpenVitals grow.</h2>
+          <p>
+            Translate the Android app for more people, or fund the ongoing
+            development, testing, documentation, releases, and maintenance
+            behind this free and open-source project.
+          </p>
+        </div>
+        <div className="support-actions" aria-label="Support OpenVitals">
+          <a className="button button-primary" href={translateUrl}>
+            Translate OpenVitals
+            <ExternalIcon />
+          </a>
+          <a className="liberapay-badge" href={liberapayUrl}>
+            <img
+              src="https://liberapay.com/assets/widgets/donate.svg"
+              alt="Support OpenVitals on Liberapay"
+              width="83"
+              height="30"
+              loading="lazy"
+            />
+          </a>
+          <a className="button button-secondary" href={supportUrl}>
+            More ways to support
+            <ArrowIcon />
+          </a>
+        </div>
+      </section>
+
       <footer className="site-footer">
         <a className="brand" href="#top" aria-label="OpenVitals home">
           <Image src="/images/openvitals-logo.png" alt="" width={34} height={24} />
@@ -333,6 +366,7 @@ export default function Home() {
           <a href={docsUrl}>Documentation</a>
           <a href={privacyUrl}>Privacy</a>
           <a href={codeUrl}>Source</a>
+          <a href={translateUrl}>Translate</a>
           <a href={supportUrl}>Support</a>
         </nav>
       </footer>
