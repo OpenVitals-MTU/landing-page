@@ -12,6 +12,7 @@ const releasesUrl = `${codeUrl}/releases`
 const playStoreUrl =
   'https://play.google.com/store/apps/details?id=tech.mmarca.openvitals'
 const fdroidUrl = 'https://f-droid.org/en/packages/tech.mmarca.openvitals/'
+const watchDocsUrl = `${docsUrl}/features/garmin-watch-sync`
 
 const proofPoints = [
   'No OpenVitals cloud account',
@@ -40,6 +41,21 @@ const featureCards = [
     title: 'Useful without lock-in',
     text: 'Use local preferences, widgets, reminders, offline maps, and import flows without creating another health data silo.',
     accent: '#2f6f9f'
+  }
+]
+
+const watchPoints = [
+  {
+    title: 'Straight off the wrist',
+    text: 'Bluetooth to your phone. No Garmin account and no Connect app in the middle.'
+  },
+  {
+    title: 'More than steps',
+    text: 'Sleep stages, heart rate, HRV, stress, Body Battery, training readiness and recovery.'
+  },
+  {
+    title: 'Alarms and settings too',
+    text: "Change what's on the watch from the phone, including its own settings menus."
   }
 ]
 
@@ -249,6 +265,31 @@ export default function Home() {
             <strong>Open source</strong>
             <span>The Android app and documentation are available on Codeberg.</span>
           </div>
+        </div>
+      </section>
+
+      <section className="devices-section" id="devices">
+        <div className="devices-copy">
+          <p className="eyebrow">Wearables</p>
+          <h2>Your Garmin watch, without the round trip.</h2>
+          <p>
+            OpenVitals reads a paired Garmin watch directly over Bluetooth and
+            imports what it recorded into Health Connect. The measures Health
+            Connect has no place for — stress, Body Battery, training load — are
+            kept in the app instead of being dropped.
+          </p>
+          <a className="text-link" href={watchDocsUrl}>
+            How watch sync works
+            <ArrowIcon />
+          </a>
+        </div>
+        <div className="devices-list" aria-label="Garmin watch support">
+          {watchPoints.map((point) => (
+            <div key={point.title}>
+              <strong>{point.title}</strong>
+              <span>{point.text}</span>
+            </div>
+          ))}
         </div>
       </section>
 

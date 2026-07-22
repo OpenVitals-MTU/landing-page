@@ -304,6 +304,7 @@ h3 {
 .feature-section,
 .screens-section,
 .privacy-section,
+.devices-section,
 .install-section,
 .support-section {
   width: min(1180px, calc(100% - 3rem));
@@ -319,6 +320,7 @@ h3 {
 
 .section-text,
 .privacy-copy p,
+.devices-copy p,
 .install-section p {
   margin: 0;
   color: var(--muted);
@@ -343,7 +345,22 @@ h3 {
     var(--mint);
 }
 
-.privacy-copy p {
+.devices-section {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(300px, 0.75fr);
+  gap: 3rem;
+  align-items: center;
+  margin-top: 6rem;
+  padding: 4rem;
+  border: 1px solid #c3dced;
+  border-radius: 8px;
+  background:
+    linear-gradient(90deg, rgb(216 236 247 / 92%), rgb(255 255 255 / 84%)),
+    var(--water);
+}
+
+.privacy-copy p,
+.devices-copy p {
   margin-top: 1.3rem;
 }
 
@@ -356,29 +373,34 @@ h3 {
   color: var(--coral);
 }
 
-.privacy-list {
+.privacy-list,
+.devices-list {
   display: grid;
   gap: 0.85rem;
 }
 
 .privacy-list div,
+.devices-list div,
 .feature-card {
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--panel);
 }
 
-.privacy-list div {
+.privacy-list div,
+.devices-list div {
   display: grid;
   gap: 0.25rem;
   padding: 1.05rem;
 }
 
-.privacy-list strong {
+.privacy-list strong,
+.devices-list strong {
   font-size: 1rem;
 }
 
 .privacy-list span,
+.devices-list span,
 .feature-card p {
   color: var(--muted);
 }
@@ -664,6 +686,7 @@ figcaption {
 
   .section-intro,
   .privacy-section,
+  .devices-section,
   .install-section,
   .support-section {
     grid-template-columns: 1fr;
@@ -759,6 +782,7 @@ figcaption {
   .feature-section,
   .screens-section,
   .privacy-section,
+  .devices-section,
   .install-section,
   .support-section,
   .site-footer {
@@ -771,9 +795,15 @@ figcaption {
   }
 
   .privacy-section,
+  .devices-section,
   .install-section,
   .support-section {
     padding: 1.4rem;
+  }
+
+  .devices-section {
+    /* The 6rem desktop gap is far too much stacked on a phone. */
+    margin-top: 3rem;
   }
 
   .feature-section,
