@@ -79,6 +79,11 @@ const screenshotSet = [
     src: '/images/hydration-entry.png',
     alt: 'OpenVitals hydration entry screen',
     label: 'Hydration'
+  },
+  {
+    src: '/images/garmin-watch.png',
+    alt: 'OpenVitals showing a paired Garmin vívoactive 5',
+    label: 'Watch'
   }
 ]
 
@@ -150,7 +155,7 @@ function PhoneShot({
         alt={alt}
         fill
         priority={priority}
-        sizes="(max-width: 760px) 56vw, 300px"
+        sizes="(max-width: 760px) 56vw, 260px"
       />
     </div>
   )
