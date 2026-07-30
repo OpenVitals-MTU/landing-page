@@ -23,24 +23,34 @@ const proofPoints = [
 
 const featureCards = [
   {
-    title: 'Daily health dashboard',
-    text: 'See activity, sleep, readiness, body, heart, hydration, nutrition, and other supported records in one focused Android app.',
+    title: 'Every metric in one place',
+    text: 'Activity, sleep, heart, body, hydration, and nutrition on one daily dashboard. Trends, statistics, and detail screens are one tap deeper when you want to know what changed.',
     accent: '#0f766e'
   },
   {
-    title: 'Metric detail screens',
-    text: 'Move from the daily view into trends, statistics, and configurable metric pages when you want to understand what changed.',
+    title: 'Import what you already have',
+    text: 'Bring in Apple Health exports, FIT, GPX, KML/KMZ, TCX, and CSV files, one at a time or whole folders. The history you built elsewhere comes with you.',
+    accent: '#2f6f9f'
+  },
+  {
+    title: 'Record activities and workouts',
+    text: 'GPS routes drawn on offline maps, BLE heart-rate, cadence, and power sensors, voice announcements, laps, and rep counting. Written to Health Connect only when you save.',
     accent: '#d95c3f'
   },
   {
-    title: 'Explicit writes only',
-    text: 'Save manual entries, imports, edits, activity recordings, and deletes only when you choose to write them back to Health Connect.',
+    title: 'Connect your Garmin',
+    text: 'Pair the watch once and sync sleep, heart rate, HRV, stress, Body Battery, steps, and workouts over Bluetooth. No Garmin account or cloud in the middle.',
     accent: '#a07b00'
   },
   {
-    title: 'Useful without lock-in',
-    text: 'Use local preferences, widgets, reminders, offline maps, and import flows without creating another health data silo.',
-    accent: '#2f6f9f'
+    title: 'Log the numbers only you know',
+    text: 'Weight, height, blood pressure, glucose, meals, drinks, and mindfulness minutes. Quick manual entry, with reminders and home-screen widgets.',
+    accent: '#1f9d55'
+  },
+  {
+    title: 'Insights made on your phone',
+    text: 'Sleep scores, Body Energy, and daily readiness are computed on-device against your own baselines. No cloud reads your data to tell you how you slept.',
+    accent: '#6b5dd3'
   }
 ]
 
@@ -300,8 +310,8 @@ export default function Home() {
 
       <section className="feature-section" id="features">
         <div className="section-heading">
-          <p className="eyebrow">What it helps with</p>
-          <h2>One calm place for the health records already on your phone.</h2>
+          <p className="eyebrow">What it does</p>
+          <h2>See it, import it, record it, log it, and understand it. All on the phone.</h2>
         </div>
         <div className="feature-grid">
           {featureCards.map((feature) => (
