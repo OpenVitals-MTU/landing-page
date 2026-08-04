@@ -12,7 +12,7 @@ const releasesUrl = `${codeUrl}/releases`
 const playStoreUrl =
   'https://play.google.com/store/apps/details?id=tech.mmarca.openvitals'
 const fdroidUrl = 'https://f-droid.org/en/packages/tech.mmarca.openvitals/'
-const watchDocsUrl = `${docsUrl}/features/garmin-watch-sync`
+const healthConnectDocsUrl = `${docsUrl}/app/health-connect`
 
 const proofPoints = [
   'No OpenVitals cloud account',
@@ -38,8 +38,8 @@ const featureCards = [
     accent: '#d95c3f'
   },
   {
-    title: 'Connect your Garmin',
-    text: 'Pair the watch once and sync sleep, heart rate, HRV, stress, Body Battery, steps, and workouts over Bluetooth. No Garmin account or cloud in the middle.',
+    title: 'Works with your watch',
+    text: "Sync your watch into Health Connect with Gadgetbridge or your vendor's app, and OpenVitals brings it all together: sleep, heart rate, HRV, steps, and workouts in one dashboard.",
     accent: '#a07b00'
   },
   {
@@ -54,18 +54,18 @@ const featureCards = [
   }
 ]
 
-const watchPoints = [
+const wearablePoints = [
   {
-    title: 'Straight off the wrist',
-    text: 'Bluetooth to your phone. No Garmin account and no Connect app in the middle.'
+    title: 'Bring the watch you have',
+    text: "Any wearable whose companion app writes to Health Connect works, whether that's Gadgetbridge or the vendor's own app."
   },
   {
-    title: 'More than steps',
-    text: 'Sleep stages, heart rate, HRV, stress, Body Battery, training readiness and recovery.'
+    title: 'One place for all of it',
+    text: 'Sleep stages, heart rate, HRV, steps, and workouts land in Health Connect, and OpenVitals turns them into one clear dashboard.'
   },
   {
-    title: 'Alarms and settings too',
-    text: "Change what's on the watch from the phone, including its own settings menus."
+    title: 'Live sensors stay direct',
+    text: 'BLE heart-rate straps and cadence and power sensors still connect to the app for live data while you record a workout.'
   }
 ]
 
@@ -89,11 +89,6 @@ const screenshotSet = [
     src: '/images/hydration-entry.png',
     alt: 'OpenVitals hydration entry screen',
     label: 'Hydration'
-  },
-  {
-    src: '/images/garmin-watch.png',
-    alt: 'OpenVitals showing a paired Garmin vívoactive 5',
-    label: 'Watch'
   }
 ]
 
@@ -286,20 +281,20 @@ export default function Home() {
       <section className="devices-section" id="devices">
         <div className="devices-copy">
           <p className="eyebrow">Wearables</p>
-          <h2>Your Garmin watch, without the round trip.</h2>
+          <h2>Works with your watch, through Health Connect.</h2>
           <p>
-            OpenVitals reads a paired Garmin watch directly over Bluetooth and
-            imports what it recorded into Health Connect. The measures Health
-            Connect has no place for — stress, Body Battery, training load — are
-            kept in the app instead of being dropped.
+            OpenVitals does not pair with watches directly. Your watch syncs
+            into Health Connect via Gadgetbridge or your vendor&apos;s app, and
+            OpenVitals reads it there and brings it all together into one
+            private dashboard.
           </p>
-          <a className="text-link" href={watchDocsUrl}>
-            How watch sync works
+          <a className="text-link" href={healthConnectDocsUrl}>
+            How Health Connect syncing works
             <ArrowIcon />
           </a>
         </div>
-        <div className="devices-list" aria-label="Garmin watch support">
-          {watchPoints.map((point) => (
+        <div className="devices-list" aria-label="Watch and sensor support">
+          {wearablePoints.map((point) => (
             <div key={point.title}>
               <strong>{point.title}</strong>
               <span>{point.text}</span>
