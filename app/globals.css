@@ -442,10 +442,8 @@ h3 {
 
 .screens-grid {
   display: grid;
-  /* Five: four product views plus the watch. A fifth column keeps the strip on
-     one row — as a 4-wide grid it would have left the last shot alone on a
-     second row. */
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  /* Four product views on one row. */
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 1.25rem;
   align-items: start;
 }
