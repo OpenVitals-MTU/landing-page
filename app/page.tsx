@@ -24,7 +24,7 @@ const proofPoints = [
 const featureCards = [
   {
     title: 'Every metric in one place',
-    text: 'Activity, sleep, heart, body, hydration, and nutrition on one daily dashboard. Trends, statistics, and detail screens are one tap deeper when you want to know what changed.',
+    text: 'Activity, sleep, heart, body, hydration, nutrition, and cycle on one daily dashboard. Trends, statistics, and detail screens are one tap deeper when you want to know what changed.',
     accent: '#0f766e'
   },
   {
@@ -44,8 +44,18 @@ const featureCards = [
   },
   {
     title: 'Log the numbers only you know',
-    text: 'Weight, height, blood pressure, glucose, meals, drinks, and mindfulness minutes. Quick manual entry, with reminders and home-screen widgets.',
+    text: 'Weight, height, blood pressure with its measurement context, glucose, meals, drinks, and mindfulness minutes. Quick manual entry, with reminders and home-screen widgets.',
     accent: '#1f9d55'
+  },
+  {
+    title: 'A report your doctor can hold',
+    text: 'Pick metrics and a time range, and the app builds a PDF on your phone: charts, statistics, and clinical sections for blood pressure, glucose, workouts, and sleep. Share it or save it; nothing is uploaded.',
+    accent: '#4f5d9e'
+  },
+  {
+    title: 'Cycle tracking that stays yours',
+    text: 'Log flow, ovulation tests, cervical mucus, and basal temperature. Period days and next-period predictions are derived on-device, and everything lives only in Health Connect behind its own permission.',
+    accent: '#b03a5b'
   },
   {
     title: 'Insights made on your phone',
