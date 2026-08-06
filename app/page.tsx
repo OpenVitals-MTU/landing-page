@@ -34,7 +34,7 @@ const featureCards = [
   },
   {
     title: 'Record activities and workouts',
-    text: 'GPS routes drawn on offline maps, BLE heart-rate, cadence, and power sensors, voice announcements, laps, and rep counting. Written to Health Connect only when you save.',
+    text: 'GPS routes drawn on offline maps, live CoMaps turn-by-turn guidance with the planned route on the map, BLE heart-rate, cadence, and power sensors, voice announcements, laps, and rep counting. Written to Health Connect only when you save.',
     accent: '#d95c3f'
   },
   {
