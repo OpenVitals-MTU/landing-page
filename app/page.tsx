@@ -44,7 +44,7 @@ const featureCards = [
   },
   {
     title: 'Log the numbers only you know',
-    text: 'Weight, height, blood pressure with its measurement context, glucose, meals, drinks, and mindfulness minutes. Quick manual entry, with reminders and home-screen widgets.',
+    text: 'Weight, height, blood pressure with its measurement context, HRV, glucose, meals, drinks, and mindfulness minutes. Quick manual entry, with reminders and home-screen widgets.',
     accent: '#1f9d55'
   },
   {
