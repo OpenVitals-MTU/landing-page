@@ -1,0 +1,517 @@
+import type { Locale } from './i18n'
+
+export type Messages = {
+  meta: {
+    title: string
+    description: string
+    ogDescription: string
+    twitterDescription: string
+  }
+  nav: {
+    primary: string
+    privacy: string
+    features: string
+    docs: string
+    install: string
+    home: string
+    language: string
+  }
+  hero: {
+    eyebrow: string
+    lede: string
+    install: string
+    docs: string
+  }
+  proof: {
+    label: string
+    points: string[]
+  }
+  intro: {
+    eyebrow: string
+    title: string
+    text: string
+  }
+  privacy: {
+    eyebrow: string
+    title: string
+    text: string
+    link: string
+    items: { title: string; text: string }[]
+    detailsLabel: string
+  }
+  devices: {
+    eyebrow: string
+    title: string
+    text: string
+    link: string
+    listLabel: string
+    points: { title: string; text: string }[]
+  }
+  features: {
+    eyebrow: string
+    title: string
+    cards: { title: string; text: string; accent: string }[]
+  }
+  screens: {
+    label: string
+    eyebrow: string
+    title: string
+    items: { src: string; alt: string; label: string }[]
+  }
+  install: {
+    eyebrow: string
+    title: string
+    text: string
+    moreLabel: string
+    guide: string
+    support: string
+    cards: {
+      title: string
+      text: string
+      hrefKey: 'playStore' | 'fdroid' | 'releases'
+      badge: string
+      alt: string
+    }[]
+  }
+  support: {
+    eyebrow: string
+    title: string
+    text: string
+    actionsLabel: string
+    review: string
+    translate: string
+    liberapayAlt: string
+    more: string
+  }
+  footer: {
+    nav: string
+    documentation: string
+    privacy: string
+    source: string
+    translate: string
+    support: string
+  }
+}
+
+export const messages: Record<Locale, Messages> = {
+  en: {
+    meta: {
+      title: 'OpenVitals - Local-first Android health dashboard',
+      description:
+        'OpenVitals is a local-first Android app for viewing, logging, importing, and understanding Health Connect data without accounts, ads, or analytics.',
+      ogDescription:
+        'A local-first Android health dashboard powered by Health Connect, built without accounts, ads, or analytics.',
+      twitterDescription:
+        'Local-first Android health tools for Health Connect data, without accounts, ads, or analytics.'
+    },
+    nav: {
+      primary: 'Primary navigation',
+      privacy: 'Privacy',
+      features: 'Features',
+      docs: 'Docs',
+      install: 'Install',
+      home: 'OpenVitals home',
+      language: 'Language'
+    },
+    hero: {
+      eyebrow: 'Local-first health tools for Android',
+      lede:
+        'A private Health Connect dashboard for viewing, logging, importing, and understanding your health data without accounts, ads, analytics, or an OpenVitals cloud.',
+      install: 'Install on Android',
+      docs: 'Read the docs'
+    },
+    proof: {
+      label: 'OpenVitals privacy guarantees',
+      points: [
+        'No OpenVitals cloud account',
+        'No app-level internet permission',
+        'No ads or analytics SDK',
+        'Health Connect stays the source of truth'
+      ]
+    },
+    intro: {
+      eyebrow: 'Built for people, not profiles',
+      title: "Health data should be useful without becoming someone else's dataset.",
+      text:
+        'OpenVitals reads supported Health Connect records, turns them into clear daily views and detail screens, and keeps control close to the device. You decide which permissions to grant and when anything gets written.'
+    },
+    privacy: {
+      eyebrow: 'Privacy stance',
+      title: 'No account. No feed. No background data business.',
+      text:
+        'The Android app is designed around explicit local flows. It reads Health Connect, stores app preferences on device, and writes health records only after a save, import, record, edit, or delete action.',
+      link: 'Review the privacy details',
+      detailsLabel: 'Privacy details',
+      items: [
+        {
+          title: 'Local by default',
+          text: 'No OpenVitals server is needed for the app dashboard.'
+        },
+        {
+          title: 'User-granted access',
+          text: 'Health Connect permissions stay visible and deliberate.'
+        },
+        {
+          title: 'Open source',
+          text: 'The Android app and documentation are available on Codeberg.'
+        }
+      ]
+    },
+    devices: {
+      eyebrow: 'Wearables',
+      title: 'Works with your watch, through Health Connect.',
+      text:
+        "OpenVitals does not pair with watches directly. Your watch syncs into Health Connect via Gadgetbridge or your vendor's app, and OpenVitals reads it there and brings it all together into one private dashboard.",
+      link: 'How Health Connect syncing works',
+      listLabel: 'Watch and sensor support',
+      points: [
+        {
+          title: 'Bring the watch you have',
+          text: "Any wearable whose companion app writes to Health Connect works, whether that's Gadgetbridge or the vendor's own app."
+        },
+        {
+          title: 'One place for all of it',
+          text: 'Sleep stages, heart rate, HRV, steps, and workouts land in Health Connect, and OpenVitals turns them into one clear dashboard.'
+        },
+        {
+          title: 'Live sensors stay direct',
+          text: 'BLE heart-rate straps and cadence and power sensors still connect to the app for live data while you record a workout.'
+        }
+      ]
+    },
+    features: {
+      eyebrow: 'What it does',
+      title: 'See it, import it, record it, log it, and understand it. All on the phone.',
+      cards: [
+        {
+          title: 'Every metric in one place',
+          text: 'Activity, sleep, heart, body, hydration, nutrition, and cycle on one daily dashboard. Trends, statistics, and detail screens are one tap deeper when you want to know what changed.',
+          accent: '#0f766e'
+        },
+        {
+          title: 'Import what you already have',
+          text: 'Bring in Apple Health exports, FIT, GPX, KML/KMZ, TCX, and CSV files, one at a time or whole folders. The history you built elsewhere comes with you.',
+          accent: '#2f6f9f'
+        },
+        {
+          title: 'Record activities and workouts',
+          text: 'GPS routes drawn on offline maps, live CoMaps turn-by-turn guidance with the planned route on the map, BLE heart-rate, cadence, and power sensors, voice announcements, laps, and rep counting. Written to Health Connect only when you save.',
+          accent: '#d95c3f'
+        },
+        {
+          title: 'Works with your watch',
+          text: "Sync your watch into Health Connect with Gadgetbridge or your vendor's app, and OpenVitals brings it all together: sleep, heart rate, HRV, steps, and workouts in one dashboard.",
+          accent: '#a07b00'
+        },
+        {
+          title: 'Log the numbers only you know',
+          text: 'Weight, height, blood pressure with its measurement context, HRV, glucose, meals, drinks, and mindfulness minutes. Quick manual entry, with reminders and home-screen widgets.',
+          accent: '#1f9d55'
+        },
+        {
+          title: 'A report your doctor can hold',
+          text: 'Pick metrics and a time range, and the app builds a PDF on your phone: charts, statistics, and clinical sections for blood pressure, glucose, workouts, and sleep. Share it or save it; nothing is uploaded.',
+          accent: '#4f5d9e'
+        },
+        {
+          title: 'Cycle tracking that stays yours',
+          text: 'Log flow, ovulation tests, cervical mucus, and basal temperature. Period days and next-period predictions are derived on-device, and everything lives only in Health Connect behind its own permission.',
+          accent: '#b03a5b'
+        },
+        {
+          title: 'Insights made on your phone',
+          text: 'Sleep scores, Body Energy, and daily readiness are computed on-device against your own baselines. No cloud reads your data to tell you how you slept.',
+          accent: '#6b5dd3'
+        }
+      ]
+    },
+    screens: {
+      label: 'OpenVitals screenshots',
+      eyebrow: 'Product views',
+      title: 'Designed for scanning today, then going deeper when it matters.',
+      items: [
+        {
+          src: '/images/daily-readiness.png',
+          alt: 'OpenVitals Daily Readiness detail screen',
+          label: 'Readiness'
+        },
+        {
+          src: '/images/activity-recording.png',
+          alt: 'OpenVitals activity recording screen',
+          label: 'Recording'
+        },
+        {
+          src: '/images/sleep.png',
+          alt: 'OpenVitals sleep tracking screen',
+          label: 'Sleep'
+        },
+        {
+          src: '/images/hydration-entry.png',
+          alt: 'OpenVitals hydration entry screen',
+          label: 'Hydration'
+        }
+      ]
+    },
+    install: {
+      eyebrow: 'Get OpenVitals',
+      title: 'Install OpenVitals on Android.',
+      text: 'Choose the Android channel that fits how you update apps. OpenVitals is also available as signed releases for people who prefer direct project downloads.',
+      moreLabel: 'More install resources',
+      guide: 'Install guide',
+      support: 'Support OpenVitals',
+      cards: [
+        {
+          title: 'Google Play',
+          text: 'Use the standard Android install and update path.',
+          hrefKey: 'playStore',
+          badge: '/images/google-play-badge.png',
+          alt: 'Get it on Google Play'
+        },
+        {
+          title: 'F-Droid',
+          text: 'Install through the free and open-source Android app store.',
+          hrefKey: 'fdroid',
+          badge: '/images/fdroid-badge.svg',
+          alt: 'Get it on F-Droid'
+        },
+        {
+          title: 'Codeberg releases',
+          text: 'Download signed APK releases directly from the project.',
+          hrefKey: 'releases',
+          badge: '/images/codeberg-releases-badge.svg',
+          alt: 'Get it on Codeberg'
+        }
+      ]
+    },
+    support: {
+      eyebrow: 'Support the project',
+      title: 'Help OpenVitals grow.',
+      text: 'Leave a positive review on Google Play, translate the Android app for more people, or fund the ongoing development, testing, documentation, releases, and maintenance behind this free and open-source project.',
+      actionsLabel: 'Support OpenVitals',
+      review: 'Review on Google Play',
+      translate: 'Translate OpenVitals',
+      liberapayAlt: 'Support OpenVitals on Liberapay',
+      more: 'More ways to support'
+    },
+    footer: {
+      nav: 'Footer navigation',
+      documentation: 'Documentation',
+      privacy: 'Privacy',
+      source: 'Source',
+      translate: 'Translate',
+      support: 'Support'
+    }
+  },
+  es: {
+    meta: {
+      title: 'OpenVitals - Panel de salud local-first para Android',
+      description:
+        'OpenVitals es una app Android local-first para ver, registrar, importar y entender datos de Health Connect sin cuentas, anuncios ni analítica.',
+      ogDescription:
+        'Un panel de salud local-first para Android impulsado por Health Connect, sin cuentas, anuncios ni analítica.',
+      twitterDescription:
+        'Herramientas de salud local-first para Android con datos de Health Connect, sin cuentas, anuncios ni analítica.'
+    },
+    nav: {
+      primary: 'Navegación principal',
+      privacy: 'Privacidad',
+      features: 'Funciones',
+      docs: 'Docs',
+      install: 'Instalar',
+      home: 'Inicio de OpenVitals',
+      language: 'Idioma'
+    },
+    hero: {
+      eyebrow: 'Herramientas de salud local-first para Android',
+      lede:
+        'Un panel privado de Health Connect para ver, registrar, importar y entender tus datos de salud sin cuentas, anuncios, analítica ni una nube de OpenVitals.',
+      install: 'Instalar en Android',
+      docs: 'Leer la documentación'
+    },
+    proof: {
+      label: 'Garantías de privacidad de OpenVitals',
+      points: [
+        'Sin cuenta en la nube de OpenVitals',
+        'Sin permiso de internet a nivel de app',
+        'Sin anuncios ni SDK de analítica',
+        'Health Connect sigue siendo la fuente de verdad'
+      ]
+    },
+    intro: {
+      eyebrow: 'Hecho para personas, no para perfiles',
+      title: 'Los datos de salud deben servir sin convertirse en el conjunto de datos de otra persona.',
+      text:
+        'OpenVitals lee los registros compatibles de Health Connect, los convierte en vistas diarias claras y pantallas de detalle, y mantiene el control cerca del dispositivo. Tú decides qué permisos conceder y cuándo se escribe algo.'
+    },
+    privacy: {
+      eyebrow: 'Enfoque de privacidad',
+      title: 'Sin cuenta. Sin feed. Sin negocio de datos en segundo plano.',
+      text:
+        'La app de Android está pensada en torno a flujos locales explícitos. Lee Health Connect, guarda preferencias en el dispositivo y escribe registros de salud solo tras guardar, importar, grabar, editar o eliminar.',
+      link: 'Revisar los detalles de privacidad',
+      detailsLabel: 'Detalles de privacidad',
+      items: [
+        {
+          title: 'Local por defecto',
+          text: 'No hace falta un servidor de OpenVitals para el panel de la app.'
+        },
+        {
+          title: 'Acceso concedido por ti',
+          text: 'Los permisos de Health Connect siguen visibles y deliberados.'
+        },
+        {
+          title: 'Código abierto',
+          text: 'La app de Android y la documentación están disponibles en Codeberg.'
+        }
+      ]
+    },
+    devices: {
+      eyebrow: 'Wearables',
+      title: 'Funciona con tu reloj, a través de Health Connect.',
+      text:
+        'OpenVitals no se empareja directamente con relojes. Tu reloj sincroniza a Health Connect con Gadgetbridge o la app del fabricante, y OpenVitals lo lee ahí y lo reúne en un solo panel privado.',
+      link: 'Cómo funciona la sincronización con Health Connect',
+      listLabel: 'Compatibilidad con relojes y sensores',
+      points: [
+        {
+          title: 'Trae el reloj que ya tienes',
+          text: 'Cualquier wearable cuya app compañera escriba en Health Connect funciona, ya sea Gadgetbridge o la del fabricante.'
+        },
+        {
+          title: 'Todo en un solo lugar',
+          text: 'Fases del sueño, frecuencia cardiaca, VFC, pasos y entrenamientos llegan a Health Connect, y OpenVitals los convierte en un panel claro.'
+        },
+        {
+          title: 'Los sensores en vivo siguen siendo directos',
+          text: 'Las bandas de frecuencia cardiaca BLE y los sensores de cadencia y potencia siguen conectándose a la app para datos en vivo mientras grabas un entrenamiento.'
+        }
+      ]
+    },
+    features: {
+      eyebrow: 'Qué hace',
+      title: 'Véelo, impórtalo, grábalo, regístralo y entiéndelo. Todo en el teléfono.',
+      cards: [
+        {
+          title: 'Todas las métricas en un solo lugar',
+          text: 'Actividad, sueño, corazón, cuerpo, hidratación, nutrición y ciclo en un panel diario. Tendencias, estadísticas y pantallas de detalle están a un toque cuando quieras saber qué cambió.',
+          accent: '#0f766e'
+        },
+        {
+          title: 'Importa lo que ya tienes',
+          text: 'Trae exportaciones de Apple Health, y archivos FIT, GPX, KML/KMZ, TCX y CSV, de uno en uno o por carpetas enteras. El historial que construiste en otro sitio te acompaña.',
+          accent: '#2f6f9f'
+        },
+        {
+          title: 'Graba actividades y entrenamientos',
+          text: 'Rutas GPS sobre mapas offline, guía turn-by-turn de CoMaps en vivo con la ruta planificada en el mapa, sensores BLE de frecuencia cardiaca, cadencia y potencia, anuncios de voz, vueltas y conteo de repeticiones. Se escribe en Health Connect solo cuando guardas.',
+          accent: '#d95c3f'
+        },
+        {
+          title: 'Funciona con tu reloj',
+          text: 'Sincroniza tu reloj a Health Connect con Gadgetbridge o la app del fabricante, y OpenVitals lo reúne todo: sueño, frecuencia cardiaca, VFC, pasos y entrenamientos en un solo panel.',
+          accent: '#a07b00'
+        },
+        {
+          title: 'Registra los números que solo tú conoces',
+          text: 'Peso, altura, presión arterial con su contexto de medición, VFC, glucosa, comidas, bebidas y minutos de mindfulness. Entrada manual rápida, con recordatorios y widgets en la pantalla de inicio.',
+          accent: '#1f9d55'
+        },
+        {
+          title: 'Un informe que tu médico puede tener',
+          text: 'Elige métricas y un intervalo, y la app genera un PDF en tu teléfono: gráficos, estadísticas y secciones clínicas para presión arterial, glucosa, entrenamientos y sueño. Compártelo o guárdalo; no se sube nada.',
+          accent: '#4f5d9e'
+        },
+        {
+          title: 'Seguimiento del ciclo que sigue siendo tuyo',
+          text: 'Registra flujo, pruebas de ovulación, moco cervical y temperatura basal. Los días de periodo y las predicciones del siguiente se calculan en el dispositivo, y todo vive solo en Health Connect tras su propio permiso.',
+          accent: '#b03a5b'
+        },
+        {
+          title: 'Insights hechos en tu teléfono',
+          text: 'Las puntuaciones de sueño, Body Energy y la preparación diaria se calculan en el dispositivo frente a tus propias baselines. Ninguna nube lee tus datos para decirte cómo dormiste.',
+          accent: '#6b5dd3'
+        }
+      ]
+    },
+    screens: {
+      label: 'Capturas de OpenVitals',
+      eyebrow: 'Vistas del producto',
+      title: 'Diseñado para revisar el día de un vistazo y profundizar cuando importa.',
+      items: [
+        {
+          src: '/images/daily-readiness.png',
+          alt: 'Pantalla de detalle de preparación diaria de OpenVitals',
+          label: 'Preparación'
+        },
+        {
+          src: '/images/activity-recording.png',
+          alt: 'Pantalla de grabación de actividad de OpenVitals',
+          label: 'Grabación'
+        },
+        {
+          src: '/images/sleep.png',
+          alt: 'Pantalla de seguimiento del sueño de OpenVitals',
+          label: 'Sueño'
+        },
+        {
+          src: '/images/hydration-entry.png',
+          alt: 'Pantalla de registro de hidratación de OpenVitals',
+          label: 'Hidratación'
+        }
+      ]
+    },
+    install: {
+      eyebrow: 'Consigue OpenVitals',
+      title: 'Instala OpenVitals en Android.',
+      text: 'Elige el canal de Android que encaje con cómo actualizas apps. OpenVitals también está disponible como releases firmados para quien prefiera descargas directas del proyecto.',
+      moreLabel: 'Más recursos de instalación',
+      guide: 'Guía de instalación',
+      support: 'Apoyar OpenVitals',
+      cards: [
+        {
+          title: 'Google Play',
+          text: 'Usa la vía estándar de instalación y actualización en Android.',
+          hrefKey: 'playStore',
+          badge: '/images/google-play-badge.png',
+          alt: 'Disponible en Google Play'
+        },
+        {
+          title: 'F-Droid',
+          text: 'Instálala desde la tienda de apps libres y de código abierto para Android.',
+          hrefKey: 'fdroid',
+          badge: '/images/fdroid-badge.svg',
+          alt: 'Disponible en F-Droid'
+        },
+        {
+          title: 'Releases de Codeberg',
+          text: 'Descarga APKs firmados directamente desde el proyecto.',
+          hrefKey: 'releases',
+          badge: '/images/codeberg-releases-badge.svg',
+          alt: 'Disponible en Codeberg'
+        }
+      ]
+    },
+    support: {
+      eyebrow: 'Apoya el proyecto',
+      title: 'Ayuda a que OpenVitals crezca.',
+      text: 'Deja una reseña positiva en Google Play, traduce la app de Android para más personas o financia el desarrollo, las pruebas, la documentación, las releases y el mantenimiento de este proyecto libre y de código abierto.',
+      actionsLabel: 'Apoyar OpenVitals',
+      review: 'Valorar en Google Play',
+      translate: 'Traducir OpenVitals',
+      liberapayAlt: 'Apoyar OpenVitals en Liberapay',
+      more: 'Más formas de apoyar'
+    },
+    footer: {
+      nav: 'Navegación del pie',
+      documentation: 'Documentación',
+      privacy: 'Privacidad',
+      source: 'Código',
+      translate: 'Traducir',
+      support: 'Apoyo'
+    }
+  }
+}
+
+export function getMessages(locale: Locale): Messages {
+  return messages[locale]
+}
