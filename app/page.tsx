@@ -392,13 +392,18 @@ export default function Home() {
           <p className="eyebrow">Support the project</p>
           <h2 id="support-heading">Help OpenVitals grow.</h2>
           <p>
-            Translate the Android app for more people, or fund the ongoing
-            development, testing, documentation, releases, and maintenance
-            behind this free and open-source project.
+            Leave a positive review on Google Play, translate the Android app
+            for more people, or fund the ongoing development, testing,
+            documentation, releases, and maintenance behind this free and
+            open-source project.
           </p>
         </div>
         <div className="support-actions" aria-label="Support OpenVitals">
-          <a className="button button-primary" href={translateUrl}>
+          <a className="button button-primary" href={playStoreUrl}>
+            Review on Google Play
+            <ExternalIcon />
+          </a>
+          <a className="button button-secondary" href={translateUrl}>
             Translate OpenVitals
             <ExternalIcon />
           </a>
