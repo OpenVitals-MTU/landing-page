@@ -109,6 +109,36 @@ a {
   color: var(--teal-dark);
 }
 
+.language-switcher {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.15rem;
+  margin: 0 0.15rem;
+  padding: 0.2rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgb(255 255 255 / 72%);
+}
+
+.language-switcher a {
+  min-height: 32px;
+  padding: 0.28rem 0.7rem;
+  border-radius: 999px;
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.language-switcher a:hover {
+  color: var(--ink);
+  background: rgb(15 118 110 / 8%);
+}
+
+.language-switcher a.is-active {
+  color: var(--teal-dark);
+  background: rgb(15 118 110 / 12%);
+}
+
 .hero {
   position: relative;
   display: grid;
@@ -713,6 +743,15 @@ figcaption {
   }
 
   .site-header nav .nav-action {
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .site-header nav .language-switcher {
+    display: inline-flex;
+  }
+
+  .site-header nav .language-switcher a {
     display: inline-flex;
     align-items: center;
   }
