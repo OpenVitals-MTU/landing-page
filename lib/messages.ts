@@ -159,12 +159,16 @@ export const messages: Record<Locale, Messages> = {
     },
     devices: {
       eyebrow: 'Wearables',
-      title: 'Works with your watch, through Health Connect.',
+      title: 'Works with your watch.',
       text:
-        "OpenVitals does not pair with watches directly. Your watch syncs into Health Connect via Gadgetbridge or your vendor's app, and OpenVitals reads it there and brings it all together into one private dashboard.",
+        "A Garmin watch pairs directly over Bluetooth, with no vendor account and no internet permission: sync, notifications on the wrist, live heart rate, weather, and your calendar. Any other wearable syncs into Health Connect via Gadgetbridge or the vendor's app, and OpenVitals brings it all together into one private dashboard.",
       link: 'How Health Connect syncing works',
       listLabel: 'Watch and sensor support',
       points: [
+        {
+          title: 'Garmin, connected directly',
+          text: 'Pair over Bluetooth and sync without a vendor account. Stay connected mode streams live heart rate and steps, forwards notifications, and puts weather and your calendar on the wrist.'
+        },
         {
           title: 'Bring the watch you have',
           text: "Any wearable whose companion app writes to Health Connect works, whether that's Gadgetbridge or the vendor's own app."
@@ -200,7 +204,7 @@ export const messages: Record<Locale, Messages> = {
         },
         {
           title: 'Works with your watch',
-          text: "Sync your watch into Health Connect with Gadgetbridge or your vendor's app, and OpenVitals brings it all together: sleep, heart rate, HRV, steps, and workouts in one dashboard.",
+          text: "Garmin watches pair directly over Bluetooth: sync, notifications, live heart rate, weather, and calendar, with no vendor account. Everything else syncs in through Health Connect via Gadgetbridge or your vendor's app.",
           accent: '#a07b00'
         },
         {
@@ -367,12 +371,16 @@ export const messages: Record<Locale, Messages> = {
     },
     devices: {
       eyebrow: 'Wearables',
-      title: 'Funciona con tu reloj, a través de Health Connect.',
+      title: 'Funciona con tu reloj.',
       text:
-        'OpenVitals no se empareja directamente con relojes. Tu reloj sincroniza a Health Connect con Gadgetbridge o la app del fabricante, y OpenVitals lo lee ahí y lo reúne en un solo panel privado.',
+        'Un reloj Garmin se empareja directamente por Bluetooth, sin cuenta del fabricante y sin permiso de internet: sincronización, notificaciones en la muñeca, frecuencia cardiaca en vivo, tiempo y tu calendario. Cualquier otro wearable sincroniza a Health Connect con Gadgetbridge o la app del fabricante, y OpenVitals lo reúne en un solo panel privado.',
       link: 'Cómo funciona la sincronización con Health Connect',
       listLabel: 'Compatibilidad con relojes y sensores',
       points: [
+        {
+          title: 'Garmin, conectado directamente',
+          text: 'Empareja por Bluetooth y sincroniza sin cuenta del fabricante. El modo Permanecer conectado transmite frecuencia cardiaca y pasos en vivo, reenvía notificaciones y pone el tiempo y tu calendario en la muñeca.'
+        },
         {
           title: 'Trae el reloj que ya tienes',
           text: 'Cualquier wearable cuya app compañera escriba en Health Connect funciona, ya sea Gadgetbridge o la del fabricante.'
@@ -408,7 +416,7 @@ export const messages: Record<Locale, Messages> = {
         },
         {
           title: 'Funciona con tu reloj',
-          text: 'Sincroniza tu reloj a Health Connect con Gadgetbridge o la app del fabricante, y OpenVitals lo reúne todo: sueño, frecuencia cardiaca, VFC, pasos y entrenamientos en un solo panel.',
+          text: 'Los relojes Garmin se emparejan directamente por Bluetooth: sincronización, notificaciones, frecuencia cardiaca en vivo, tiempo y calendario, sin cuenta del fabricante. El resto sincroniza a través de Health Connect con Gadgetbridge o la app del fabricante.',
           accent: '#a07b00'
         },
         {
