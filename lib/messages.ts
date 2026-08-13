@@ -224,7 +224,7 @@ export const messages: Record<Locale, Messages> = {
         },
         {
           title: 'Insights made on your phone',
-          text: 'Sleep scores, Body Energy, and daily readiness are computed on-device against your own baselines. No cloud reads your data to tell you how you slept.',
+          text: 'Sleep scores, Body Energy, and daily readiness are computed on-device against your own baselines. Body Energy reads how well you slept - efficiency, time awake, deep and REM - not just how long. No cloud reads your data to tell you how you slept.',
           accent: '#6b5dd3'
         }
       ]
@@ -436,7 +436,7 @@ export const messages: Record<Locale, Messages> = {
         },
         {
           title: 'Insights hechos en tu teléfono',
-          text: 'Las puntuaciones de sueño, Body Energy y la preparación diaria se calculan en el dispositivo frente a tus propias baselines. Ninguna nube lee tus datos para decirte cómo dormiste.',
+          text: 'Las puntuaciones de sueño, Body Energy y la preparación diaria se calculan en el dispositivo frente a tus propias baselines. Body Energy lee lo bien que dormiste - eficiencia, tiempo despierto, sueño profundo y REM - no solo cuánto. Ninguna nube lee tus datos para decirte cómo dormiste.',
           accent: '#6b5dd3'
         }
       ]
