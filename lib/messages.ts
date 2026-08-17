@@ -64,7 +64,6 @@ export type Messages = {
     text: string
     moreLabel: string
     guide: string
-    support: string
     cards: {
       title: string
       text: string
