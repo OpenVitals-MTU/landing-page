@@ -261,10 +261,6 @@ export default async function Home({
             {copy.install.guide}
             <ArrowIcon />
           </a>
-          <a href={supportUrl}>
-            {copy.install.support}
-            <ArrowIcon />
-          </a>
         </div>
       </section>
 

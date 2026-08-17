@@ -161,21 +161,17 @@ export const messages: Record<Locale, Messages> = {
       eyebrow: 'Wearables',
       title: 'Works with your watch.',
       text:
-        "A Garmin watch pairs directly over Bluetooth, with no vendor account and no internet permission: sync, notifications on the wrist, live heart rate, weather, and your calendar. Any other wearable syncs into Health Connect via Gadgetbridge or the vendor's app, and OpenVitals brings it all together into one private dashboard.",
+        "Connect any wearable through Gadgetbridge or your vendor's official app. Sync notifications, live heart rate, weather, and your calendar directly over Bluetooth. Everything flows into Health Connect, and OpenVitals brings it all together into one private dashboard.",
       link: 'How Health Connect syncing works',
       listLabel: 'Watch and sensor support',
       points: [
         {
-          title: 'Garmin, connected directly',
-          text: 'Pair over Bluetooth and sync without a vendor account. Stay connected mode streams live heart rate and steps, forwards notifications, and puts weather and your calendar on the wrist.'
+          title: 'Any wearable that writes to Health Connect',
+          text: 'Whether it uses Gadgetbridge or your vendor\'s official app, if the companion app syncs to Health Connect, OpenVitals sees it.'
         },
         {
-          title: 'Bring the watch you have',
-          text: "Any wearable whose companion app writes to Health Connect works, whether that's Gadgetbridge or the vendor's own app."
-        },
-        {
-          title: 'One place for all of it',
-          text: 'Sleep stages, heart rate, HRV, steps, and workouts land in Health Connect, and OpenVitals turns them into one clear dashboard.'
+          title: 'Sleep, heart rate, steps, and workouts',
+          text: 'All your wearable metrics land in Health Connect: sleep stages, heart rate, HRV, steps, and workouts appear in one clear dashboard.'
         },
         {
           title: 'Live sensors stay direct',
@@ -204,7 +200,7 @@ export const messages: Record<Locale, Messages> = {
         },
         {
           title: 'Works with your watch',
-          text: "Garmin watches pair directly over Bluetooth: sync, notifications, live heart rate, weather, and calendar, with no vendor account. Everything else syncs in through Health Connect via Gadgetbridge or your vendor's app.",
+          text: "Connect any wearable through Gadgetbridge or your vendor's app: sync notifications, live heart rate, weather, and calendar over Bluetooth. Everything syncs through Health Connect into one unified dashboard.",
           accent: '#a07b00'
         },
         {
@@ -236,8 +232,8 @@ export const messages: Record<Locale, Messages> = {
       items: [
         {
           src: '/images/daily-readiness.png',
-          alt: 'OpenVitals Daily Readiness detail screen',
-          label: 'Readiness'
+          alt: 'OpenVitals Body Energy detail screen',
+          label: 'Body Energy'
         },
         {
           src: '/images/activity-recording.png',
@@ -262,7 +258,6 @@ export const messages: Record<Locale, Messages> = {
       text: 'Choose the Android channel that fits how you update apps. OpenVitals is also available as signed releases for people who prefer direct project downloads.',
       moreLabel: 'More install resources',
       guide: 'Install guide',
-      support: 'Support OpenVitals',
       cards: [
         {
           title: 'Google Play',
@@ -373,21 +368,17 @@ export const messages: Record<Locale, Messages> = {
       eyebrow: 'Wearables',
       title: 'Funciona con tu reloj.',
       text:
-        'Un reloj Garmin se empareja directamente por Bluetooth, sin cuenta del fabricante y sin permiso de internet: sincronización, notificaciones en la muñeca, frecuencia cardiaca en vivo, tiempo y tu calendario. Cualquier otro wearable sincroniza a Health Connect con Gadgetbridge o la app del fabricante, y OpenVitals lo reúne en un solo panel privado.',
+        'Conecta cualquier wearable a través de Gadgetbridge o la app oficial del fabricante. Sincroniza notificaciones, frecuencia cardiaca en vivo, tiempo y tu calendario directamente por Bluetooth. Todo fluye a Health Connect, y OpenVitals lo reúne en un solo panel privado.',
       link: 'Cómo funciona la sincronización con Health Connect',
       listLabel: 'Compatibilidad con relojes y sensores',
       points: [
         {
-          title: 'Garmin, conectado directamente',
-          text: 'Empareja por Bluetooth y sincroniza sin cuenta del fabricante. El modo Permanecer conectado transmite frecuencia cardiaca y pasos en vivo, reenvía notificaciones y pone el tiempo y tu calendario en la muñeca.'
+          title: 'Cualquier wearable que escriba en Health Connect',
+          text: 'Ya sea Gadgetbridge o la app oficial del fabricante, si la app compañera sincroniza a Health Connect, OpenVitals lo ve.'
         },
         {
-          title: 'Trae el reloj que ya tienes',
-          text: 'Cualquier wearable cuya app compañera escriba en Health Connect funciona, ya sea Gadgetbridge o la del fabricante.'
-        },
-        {
-          title: 'Todo en un solo lugar',
-          text: 'Fases del sueño, frecuencia cardiaca, VFC, pasos y entrenamientos llegan a Health Connect, y OpenVitals los convierte en un panel claro.'
+          title: 'Sueño, frecuencia cardiaca, pasos y entrenamientos',
+          text: 'Todas tus métricas de wearable llegan a Health Connect: fases del sueño, frecuencia cardiaca, VFC, pasos y entrenamientos aparecen en un panel claro.'
         },
         {
           title: 'Los sensores en vivo siguen siendo directos',
@@ -416,7 +407,7 @@ export const messages: Record<Locale, Messages> = {
         },
         {
           title: 'Funciona con tu reloj',
-          text: 'Los relojes Garmin se emparejan directamente por Bluetooth: sincronización, notificaciones, frecuencia cardiaca en vivo, tiempo y calendario, sin cuenta del fabricante. El resto sincroniza a través de Health Connect con Gadgetbridge o la app del fabricante.',
+          text: 'Conecta cualquier wearable a través de Gadgetbridge o la app del fabricante: sincroniza notificaciones, frecuencia cardiaca en vivo, tiempo y calendario por Bluetooth. Todo sincroniza a través de Health Connect en un panel unificado.',
           accent: '#a07b00'
         },
         {
@@ -448,8 +439,8 @@ export const messages: Record<Locale, Messages> = {
       items: [
         {
           src: '/images/daily-readiness.png',
-          alt: 'Pantalla de detalle de preparación diaria de OpenVitals',
-          label: 'Preparación'
+          alt: 'Pantalla de detalle de Body Energy de OpenVitals',
+          label: 'Body Energy'
         },
         {
           src: '/images/activity-recording.png',
@@ -474,7 +465,6 @@ export const messages: Record<Locale, Messages> = {
       text: 'Elige el canal de Android que encaje con cómo actualizas apps. OpenVitals también está disponible como releases firmados para quien prefiera descargas directas del proyecto.',
       moreLabel: 'Más recursos de instalación',
       guide: 'Guía de instalación',
-      support: 'Apoyar OpenVitals',
       cards: [
         {
           title: 'Google Play',
