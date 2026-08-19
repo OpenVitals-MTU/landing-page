@@ -199,7 +199,7 @@ export const messages: Record<Locale, Messages> = {
         },
         {
           title: 'Works with your watch',
-          text: "Connect any wearable through Gadgetbridge or your vendor's app: sync notifications, live heart rate, weather, and calendar over Bluetooth. Everything syncs through Health Connect into one unified dashboard.",
+          text: "Connect any wearable through Gadgetbridge or your vendor's app: sync notifications, live heart rate, weather, and calendar over Bluetooth, on a schedule if you want. Everything syncs through Health Connect into one unified dashboard.",
           accent: '#a07b00'
         },
         {
@@ -406,7 +406,7 @@ export const messages: Record<Locale, Messages> = {
         },
         {
           title: 'Funciona con tu reloj',
-          text: 'Conecta cualquier wearable a través de Gadgetbridge o la app del fabricante: sincroniza notificaciones, frecuencia cardiaca en vivo, tiempo y calendario por Bluetooth. Todo sincroniza a través de Health Connect en un panel unificado.',
+          text: 'Conecta cualquier wearable a través de Gadgetbridge o la app del fabricante: sincroniza notificaciones, frecuencia cardiaca en vivo, tiempo y calendario por Bluetooth, con horario automático si quieres. Todo sincroniza a través de Health Connect en un panel unificado.',
           accent: '#a07b00'
         },
         {
