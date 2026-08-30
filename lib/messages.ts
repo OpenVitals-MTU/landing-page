@@ -194,7 +194,7 @@ export const messages: Record<Locale, Messages> = {
         },
         {
           title: 'Record activities and workouts',
-          text: 'GPS routes drawn on offline maps that rotate and follow you, live CoMaps turn-by-turn guidance with the planned route on the map, BLE heart-rate, cadence, and power sensors, voice announcements, laps, and rep counting. Written to Health Connect only when you save.',
+          text: 'GPS routes drawn on offline maps that rotate and follow you, live CoMaps turn-by-turn guidance with the planned route on the map, BLE heart-rate, cadence, and power sensors, voice announcements, laps, and rep counting. Workout plans built once and run as guided sessions, with reps counted by the phone and rests that count down. Any workout exports without its route as TCX, FIT, or CSV. Written to Health Connect only when you save.',
           accent: '#d95c3f'
         },
         {
@@ -401,7 +401,7 @@ export const messages: Record<Locale, Messages> = {
         },
         {
           title: 'Graba actividades y entrenamientos',
-          text: 'Rutas GPS sobre mapas offline que giran y te siguen, guía turn-by-turn de CoMaps en vivo con la ruta planificada en el mapa, sensores BLE de frecuencia cardiaca, cadencia y potencia, anuncios de voz, vueltas y conteo de repeticiones. Se escribe en Health Connect solo cuando guardas.',
+          text: 'Rutas GPS sobre mapas offline que giran y te siguen, guía turn-by-turn de CoMaps en vivo con la ruta planificada en el mapa, sensores BLE de frecuencia cardiaca, cadencia y potencia, anuncios de voz, vueltas y conteo de repeticiones. Planes de entrenamiento que creas una vez y ejecutas como sesiones guiadas, con repeticiones contadas por el teléfono y descansos con cuenta atrás. Cualquier entrenamiento se exporta sin su ruta como TCX, FIT o CSV. Se escribe en Health Connect solo cuando guardas.',
           accent: '#d95c3f'
         },
         {
