@@ -50,6 +50,28 @@ function CheckIcon() {
   )
 }
 
+function StarIcon({ filled }: { filled: boolean }) {
+  return (
+    <svg
+      aria-hidden="true"
+      viewBox="0 0 24 24"
+      className={filled ? 'star star-filled' : 'star'}
+    >
+      <path d="m12 2.8 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.7l-5.9 3.1 1.2-6.5-4.8-4.6 6.6-.9z" />
+    </svg>
+  )
+}
+
+function ReviewStars({ rating, label }: { rating: number; label: string }) {
+  return (
+    <span className="review-stars" role="img" aria-label={label}>
+      {[1, 2, 3, 4, 5].map((step) => (
+        <StarIcon key={step} filled={step <= rating} />
+      ))}
+    </span>
+  )
+}
+
 function PhoneShot({
   src,
   alt,
@@ -83,6 +105,13 @@ export default async function Home({
   if (!isLocale(rawLocale)) notFound()
   const locale: Locale = rawLocale
   const copy = getMessages(locale)
+  // Review dates are rendered as "August 2026" / "agosto de 2026", in UTC so
+  // the ISO day never shifts across the server's timezone.
+  const reviewDate = new Intl.DateTimeFormat(locale, {
+    year: 'numeric',
+    month: 'long',
+    timeZone: 'UTC'
+  })
 
   return (
     <main>
@@ -228,6 +257,52 @@ export default async function Home({
             <figure key={screenshot.label}>
               <PhoneShot src={screenshot.src} alt={screenshot.alt} />
               <figcaption>{screenshot.label}</figcaption>
+            </figure>
+          ))}
+        </div>
+      </section>
+
+      <section className="reviews-section" aria-label={copy.reviews.label}>
+        <div className="section-heading reviews-heading">
+          <div>
+            <p className="eyebrow">{copy.reviews.eyebrow}</p>
+            <h2>{copy.reviews.title}</h2>
+            <p className="section-text">{copy.reviews.text}</p>
+          </div>
+          <a className="text-link" href={playStoreUrl}>
+            {copy.reviews.link}
+            <ExternalIcon />
+          </a>
+        </div>
+        <div
+          className="reviews-track"
+          role="region"
+          aria-label={copy.reviews.trackLabel}
+          tabIndex={0}
+        >
+          {copy.reviews.items.map((review, index) => (
+            <figure className="review-card" key={`${review.author}-${index}`}>
+              <ReviewStars
+                rating={review.rating}
+                label={copy.reviews.ratingLabel.replace(
+                  '{rating}',
+                  String(review.rating)
+                )}
+              />
+              <blockquote>
+                <p>{review.text}</p>
+              </blockquote>
+              <figcaption>
+                <span>{review.author}</span>
+                <time dateTime={review.date}>
+                  {reviewDate.format(new Date(review.date))}
+                </time>
+                {review.translated && (
+                  <small className="review-translated">
+                    {copy.reviews.translatedNote}
+                  </small>
+                )}
+              </figcaption>
             </figure>
           ))}
         </div>
