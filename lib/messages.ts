@@ -58,6 +58,26 @@ export type Messages = {
     title: string
     items: { src: string; alt: string; label: string }[]
   }
+  reviews: {
+    label: string
+    eyebrow: string
+    title: string
+    text: string
+    link: string
+    trackLabel: string
+    /** Accessible rating text; `{rating}` is replaced with the star count. */
+    ratingLabel: string
+    /** Shown on cards whose text is Google's translation of the original. */
+    translatedNote: string
+    items: {
+      author: string
+      rating: 1 | 2 | 3 | 4 | 5
+      /** ISO date (YYYY-MM-DD) of the review, formatted per locale. */
+      date: string
+      text: string
+      translated?: boolean
+    }[]
+  }
   install: {
     eyebrow: string
     title: string
@@ -248,6 +268,79 @@ export const messages: Record<Locale, Messages> = {
           src: '/images/hydration-entry.png',
           alt: 'OpenVitals hydration entry screen',
           label: 'Hydration'
+        }
+      ]
+    },
+    reviews: {
+      label: 'Google Play reviews',
+      eyebrow: 'From Google Play',
+      title: 'What people say after living with it.',
+      text: 'Quoted verbatim from public reviews on the Google Play listing.',
+      link: 'Read all reviews on Google Play',
+      trackLabel: 'Reviews carousel, scroll sideways to see more',
+      ratingLabel: '{rating} out of 5 stars',
+      translatedNote: 'Translated by Google',
+      // Verbatim from the Google Play listing, newest first.
+      items: [
+        {
+          author: 'Peter',
+          rating: 5,
+          date: '2026-08-31',
+          text: 'fantastic app, no account no cloud and much better features than google health. And the vest part: it is open source.'
+        },
+        {
+          author: 'James Wiles',
+          rating: 5,
+          date: '2026-08-27',
+          text: "It's like the Fitbit app from back when the Fitbit app was good. Fantastic work!"
+        },
+        {
+          author: 'Vlastní Cestou',
+          rating: 5,
+          date: '2026-08-25',
+          text: "Refreshing to find a health app that actually respects privacy - no account, no ads, no tracking, and it reads Health Connect data more reliably than Google's own Fit app. Daily Readiness and Body Energy insights are genuinely useful, and the dev is quick to respond to feedback. Open source too - impressive work for a solo project!"
+        },
+        {
+          author: 'Przemyslaw Kusiak',
+          rating: 5,
+          date: '2026-08-23',
+          text: 'Great app! I use it to import FIT and TCX workouts to Google Health'
+        },
+        {
+          author: 'José Papaianni',
+          rating: 5,
+          date: '2026-08-10',
+          text: 'Finally! A transparent health tracking app'
+        },
+        {
+          author: 'Ezequiel Aciar',
+          rating: 5,
+          date: '2026-08-10',
+          text: 'everything I was looking for!'
+        },
+        {
+          author: 'aniket kadam',
+          rating: 5,
+          date: '2026-07-06',
+          text: "great app! The developer deserves big praise. He's great with feedback and resolution. Thank you!"
+        },
+        {
+          author: 'Joshua King',
+          rating: 5,
+          date: '2026-07-04',
+          text: 'Exactly what I wanted from the Google Health app but better! Great work man! 👏'
+        },
+        {
+          author: 'Karan Dhillon',
+          rating: 5,
+          date: '2026-06-13',
+          text: "as an android engineer, i am really disappointed how google's own google health app cannot correct query their own health connect repo. Yet this app does that job flawlessly!"
+        },
+        {
+          author: 'Rob Pitt',
+          rating: 5,
+          date: '2026-06-05',
+          text: "Cool little tool that displays health data with no forced data collection, in fact according to Gemini, it currently doesn't even have system level permission to access the Internet."
         }
       ]
     },
@@ -455,6 +548,108 @@ export const messages: Record<Locale, Messages> = {
           src: '/images/hydration-entry.png',
           alt: 'Pantalla de registro de hidratación de OpenVitals',
           label: 'Hidratación'
+        }
+      ]
+    },
+    reviews: {
+      label: 'Reseñas de Google Play',
+      eyebrow: 'Desde Google Play',
+      title: 'Lo que dice la gente después de usarla a diario.',
+      text: 'Citas literales de reseñas públicas en la ficha de Google Play.',
+      link: 'Leer todas las reseñas en Google Play',
+      trackLabel: 'Carrusel de reseñas, desplaza lateralmente para ver más',
+      ratingLabel: '{rating} de 5 estrellas',
+      translatedNote: 'Traducido por Google',
+      // Literal de la ficha de Google Play, de más reciente a más antigua.
+      // Las reseñas en inglés usan la traducción que Google muestra en la ficha.
+      items: [
+        {
+          author: 'Peter',
+          rating: 5,
+          date: '2026-08-31',
+          text: 'Una aplicación fantástica, sin cuenta, sin nube y con funciones mucho mejores que Google Health. Y lo mejor de todo: es de código abierto.',
+          translated: true
+        },
+        {
+          author: 'James Wiles',
+          rating: 5,
+          date: '2026-08-27',
+          text: 'Es como la aplicación de Fitbit de cuando la aplicación de Fitbit era buena. ¡Un trabajo fantástico!',
+          translated: true
+        },
+        {
+          author: 'Vlastní Cestou',
+          rating: 5,
+          date: '2026-08-25',
+          text: 'Es un alivio encontrar una aplicación de salud que realmente respeta la privacidad: sin cuentas, sin anuncios, sin seguimiento, y lee los datos de Health Connect con más fiabilidad que la propia aplicación Fit de Google. Los análisis de Preparación Diaria y Energía Corporal son realmente útiles, y el desarrollador responde rápidamente a los comentarios. Además, es de código abierto: ¡un trabajo impresionante para un proyecto individual!',
+          translated: true
+        },
+        {
+          author: 'Przemyslaw Kusiak',
+          rating: 5,
+          date: '2026-08-23',
+          text: '¡Excelente aplicación! La uso para importar entrenamientos de FIT y TCX a Google Health.',
+          translated: true
+        },
+        {
+          author: 'Leandro Ferri',
+          rating: 5,
+          date: '2026-08-11',
+          text: 'buenísima app de código abierto que no solo sirve por si misma, sino que ademas puedo leer y usar todos mis datos registrados por otras aplicaciones de salud 10/10'
+        },
+        {
+          author: 'José Papaianni',
+          rating: 5,
+          date: '2026-08-10',
+          text: '¡Por fin! Una aplicación transparente para el seguimiento de la salud.',
+          translated: true
+        },
+        {
+          author: 'Alejandra Pedragosa',
+          rating: 5,
+          date: '2026-08-10',
+          text: 'Me resulta muy útil para sistematizar toda mi información sobre salud y son muy útiles los reportes que puedo compartir con mi médico'
+        },
+        {
+          author: 'Ezequiel Aciar',
+          rating: 5,
+          date: '2026-08-10',
+          text: '¡Todo lo que estaba buscando!',
+          translated: true
+        },
+        {
+          author: 'Alejandro H. Marcatili',
+          rating: 5,
+          date: '2026-08-10',
+          text: 'Excelente aplicacion, toma con exactitud los datos y los muestra de una manera amigable y certera'
+        },
+        {
+          author: 'aniket kadam',
+          rating: 5,
+          date: '2026-07-06',
+          text: '¡Excelente aplicación! El desarrollador merece un gran reconocimiento. Responde rápidamente a los comentarios y resuelve los problemas. ¡Gracias!',
+          translated: true
+        },
+        {
+          author: 'Joshua King',
+          rating: 5,
+          date: '2026-07-04',
+          text: '¡Justo lo que buscaba en la app de Google Salud, pero mejor! ¡Excelente trabajo! 👏',
+          translated: true
+        },
+        {
+          author: 'Karan Dhillon',
+          rating: 5,
+          date: '2026-06-13',
+          text: 'Como ingeniero de Android, me decepciona mucho que la propia aplicación Google Health no pueda consultar correctamente su repositorio de Health Connect. ¡Sin embargo, esta aplicación lo hace a la perfección!',
+          translated: true
+        },
+        {
+          author: 'Rob Pitt',
+          rating: 5,
+          date: '2026-06-05',
+          text: 'Una pequeña y genial herramienta que muestra datos de salud sin recopilar datos de forma forzada; de hecho, según Gemini, actualmente ni siquiera tiene permiso a nivel de sistema para acceder a Internet.',
+          translated: true
         }
       ]
     },

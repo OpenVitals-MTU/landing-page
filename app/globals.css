@@ -677,6 +677,114 @@ figcaption {
   padding: 2.2rem 0;
 }
 
+.reviews-section {
+  width: min(1180px, calc(100% - 3rem));
+  margin: 0 auto;
+  padding: 6rem 0 0;
+}
+
+.reviews-heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 2rem;
+  max-width: none;
+}
+
+.reviews-heading > div {
+  max-width: 760px;
+}
+
+.reviews-heading .section-text {
+  margin-top: 0.75rem;
+}
+
+.reviews-heading .text-link {
+  flex: none;
+  margin-top: 0;
+  padding-bottom: 0.35rem;
+}
+
+.reviews-track {
+  display: flex;
+  gap: 1.25rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-padding-inline: 0.25rem;
+  /* Room for the card shadow and the scrollbar without clipping. */
+  padding: 0.25rem 0.25rem 1.25rem;
+  scrollbar-width: thin;
+  scrollbar-color: var(--line) transparent;
+  -webkit-overflow-scrolling: touch;
+}
+
+.reviews-track:focus-visible {
+  outline: 2px solid var(--teal);
+  outline-offset: 4px;
+  border-radius: 8px;
+}
+
+.review-card {
+  display: grid;
+  align-content: start;
+  gap: 1rem;
+  flex: 0 0 min(80vw, 22rem);
+  scroll-snap-align: start;
+  margin: 0;
+  padding: 1.4rem;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+  background: var(--panel);
+}
+
+.review-stars {
+  display: inline-flex;
+  gap: 0.15rem;
+}
+
+.review-stars .star {
+  width: 18px;
+  height: 18px;
+  fill: transparent;
+  stroke: var(--line);
+  stroke-width: 1.6;
+  stroke-linejoin: round;
+}
+
+.review-stars .star-filled {
+  fill: var(--amber);
+  stroke: #c9a63d;
+}
+
+.review-card blockquote {
+  margin: 0;
+}
+
+.review-card blockquote p {
+  margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: var(--ink);
+}
+
+.review-card figcaption {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.75rem;
+  align-items: baseline;
+}
+
+.review-card figcaption time {
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.review-translated {
+  flex-basis: 100%;
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+
 @media (max-width: 1040px) {
   .site-header {
     padding-inline: 2rem;
@@ -856,6 +964,22 @@ figcaption {
 
   .screens-grid .phone-shot {
     width: min(72vw, 230px);
+  }
+
+  .reviews-section {
+    width: min(100% - 2rem, 1180px);
+    padding-top: 4rem;
+  }
+
+  .reviews-heading {
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+  }
+
+  .review-card {
+    flex-basis: min(82vw, 20rem);
+    padding: 1.2rem;
   }
 
   .install-section {
