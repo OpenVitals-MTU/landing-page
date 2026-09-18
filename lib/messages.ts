@@ -214,17 +214,17 @@ export const messages: Record<Locale, Messages> = {
         },
         {
           title: 'Record activities and workouts',
-          text: 'GPS routes drawn on offline maps that rotate and follow you, live CoMaps turn-by-turn guidance with the planned route on the map, BLE heart-rate, cadence, and power sensors, voice announcements, laps, and rep counting. Workout plans built once and run as guided sessions, with sets, weight and rest per exercise, reps counted by the phone and rests that count down. Imported routes get their altitude corrected from elevation tiles stored on the phone. Any workout exports without its route as TCX, FIT, or CSV. Written to Health Connect only when you save.',
+          text: 'GPS routes drawn on offline maps that rotate and follow you, live CoMaps turn-by-turn guidance with the planned route on the map, BLE heart-rate, cadence, and power sensors, voice announcements, laps, and rep counting. Workout plans built once and run as guided sessions, with sets, weight and rest per exercise, reps counted by the phone and rests that count down. Imported and recorded routes get their altitude corrected from elevation tiles stored on the phone. Any workout exports without its route as TCX, FIT, or CSV. Written to Health Connect only when you save.',
           accent: '#d95c3f'
         },
         {
           title: 'Works with your watch',
-          text: "Connect any wearable through Gadgetbridge or your vendor's app: sync notifications, live heart rate, weather, and calendar over Bluetooth, on a schedule if you want. Everything syncs through Health Connect into one unified dashboard.",
+          text: "Connect any wearable through Gadgetbridge or your vendor's app: sync notifications and ringing calls, live heart rate, weather, and calendar over Bluetooth, on a schedule if you want. Everything syncs through Health Connect into one unified dashboard.",
           accent: '#a07b00'
         },
         {
           title: 'Log the numbers only you know',
-          text: 'Weight, height, blood pressure with its measurement context, HRV, glucose, meals, drinks, and mindfulness minutes. Quick manual entry, with reminders and home-screen widgets.',
+          text: 'Weight, height, blood pressure with its measurement context and categories from the guideline you choose (ACC/AHA, ESH, ESC, or ISH), HRV, glucose, meals, drinks, and mindfulness minutes. Quick manual entry, with reminders and home-screen widgets.',
           accent: '#1f9d55'
         },
         {
@@ -494,17 +494,17 @@ export const messages: Record<Locale, Messages> = {
         },
         {
           title: 'Graba actividades y entrenamientos',
-          text: 'Rutas GPS sobre mapas offline que giran y te siguen, guía turn-by-turn de CoMaps en vivo con la ruta planificada en el mapa, sensores BLE de frecuencia cardiaca, cadencia y potencia, anuncios de voz, vueltas y conteo de repeticiones. Planes de entrenamiento que creas una vez y ejecutas como sesiones guiadas, con series, peso y descanso por ejercicio, repeticiones contadas por el teléfono y descansos con cuenta atrás. Las rutas importadas corrigen su altitud con teselas de elevación guardadas en el teléfono. Cualquier entrenamiento se exporta sin su ruta como TCX, FIT o CSV. Se escribe en Health Connect solo cuando guardas.',
+          text: 'Rutas GPS sobre mapas offline que giran y te siguen, guía turn-by-turn de CoMaps en vivo con la ruta planificada en el mapa, sensores BLE de frecuencia cardiaca, cadencia y potencia, anuncios de voz, vueltas y conteo de repeticiones. Planes de entrenamiento que creas una vez y ejecutas como sesiones guiadas, con series, peso y descanso por ejercicio, repeticiones contadas por el teléfono y descansos con cuenta atrás. Las rutas importadas y grabadas corrigen su altitud con teselas de elevación guardadas en el teléfono. Cualquier entrenamiento se exporta sin su ruta como TCX, FIT o CSV. Se escribe en Health Connect solo cuando guardas.',
           accent: '#d95c3f'
         },
         {
           title: 'Funciona con tu reloj',
-          text: 'Conecta cualquier wearable a través de Gadgetbridge o la app del fabricante: sincroniza notificaciones, frecuencia cardiaca en vivo, tiempo y calendario por Bluetooth, con horario automático si quieres. Todo sincroniza a través de Health Connect en un panel unificado.',
+          text: 'Conecta cualquier wearable a través de Gadgetbridge o la app del fabricante: sincroniza notificaciones y llamadas entrantes, frecuencia cardiaca en vivo, tiempo y calendario por Bluetooth, con horario automático si quieres. Todo sincroniza a través de Health Connect en un panel unificado.',
           accent: '#a07b00'
         },
         {
           title: 'Registra los números que solo tú conoces',
-          text: 'Peso, altura, presión arterial con su contexto de medición, VFC, glucosa, comidas, bebidas y minutos de mindfulness. Entrada manual rápida, con recordatorios y widgets en la pantalla de inicio.',
+          text: 'Peso, altura, presión arterial con su contexto de medición y categorías según la guía que elijas (ACC/AHA, ESH, ESC o ISH), VFC, glucosa, comidas, bebidas y minutos de mindfulness. Entrada manual rápida, con recordatorios y widgets en la pantalla de inicio.',
           accent: '#1f9d55'
         },
         {
