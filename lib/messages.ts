@@ -224,7 +224,7 @@ export const messages: Record<Locale, Messages> = {
         },
         {
           title: 'Log the numbers only you know',
-          text: 'Weight, height, blood pressure with its measurement context and categories from the guideline you choose (ACC/AHA, ESH, ESC, or ISH), HRV, glucose, meals, drinks, and mindfulness minutes. Quick manual entry, with reminders and home-screen widgets.',
+          text: 'Weight, height, blood pressure with its measurement context and categories from the guideline you choose (ACC/AHA, ESH, ESC, or ISH), HRV, glucose, meals, drinks, foods you define once with their nutrients and log by portion, and mindfulness minutes. Quick manual entry, with reminders and home-screen widgets.',
           accent: '#1f9d55'
         },
         {
@@ -504,7 +504,7 @@ export const messages: Record<Locale, Messages> = {
         },
         {
           title: 'Registra los números que solo tú conoces',
-          text: 'Peso, altura, presión arterial con su contexto de medición y categorías según la guía que elijas (ACC/AHA, ESH, ESC o ISH), VFC, glucosa, comidas, bebidas y minutos de mindfulness. Entrada manual rápida, con recordatorios y widgets en la pantalla de inicio.',
+          text: 'Peso, altura, presión arterial con su contexto de medición y categorías según la guía que elijas (ACC/AHA, ESH, ESC o ISH), VFC, glucosa, comidas, bebidas, alimentos que defines una vez con sus nutrientes y registras por porción, y minutos de mindfulness. Entrada manual rápida, con recordatorios y widgets en la pantalla de inicio.',
           accent: '#1f9d55'
         },
         {
