@@ -229,12 +229,12 @@ export const messages: Record<Locale, Messages> = {
         },
         {
           title: 'A report your doctor can hold',
-          text: 'Pick metrics and a time range, and the app builds a PDF on your phone: charts, statistics, and clinical sections for blood pressure, glucose, workouts, and sleep. Share it or save it; nothing is uploaded.',
+          text: 'Pick metrics and a time range, and the app builds a PDF on your phone: charts, statistics, and clinical sections for blood pressure, glucose, workouts, sleep, and cycle tracking. Share it or save it; nothing is uploaded.',
           accent: '#4f5d9e'
         },
         {
           title: 'Cycle tracking that stays yours',
-          text: 'Log flow, ovulation tests, cervical mucus, and basal temperature. Period days and next-period predictions are derived on-device, and everything lives only in Health Connect behind its own permission.',
+          text: 'A day log for bleeding, pain, mood, energy, symptoms, notes, and tests, logged one thing at a time. Next-period ranges come from your own history, a contraceptive pill scheme reminds you on taking days, and Health Connect keeps its records while the journal stays on your phone behind its own permission.',
           accent: '#b03a5b'
         },
         {
@@ -509,12 +509,12 @@ export const messages: Record<Locale, Messages> = {
         },
         {
           title: 'Un informe que tu médico puede tener',
-          text: 'Elige métricas y un intervalo, y la app genera un PDF en tu teléfono: gráficos, estadísticas y secciones clínicas para presión arterial, glucosa, entrenamientos y sueño. Compártelo o guárdalo; no se sube nada.',
+          text: 'Elige métricas y un intervalo, y la app genera un PDF en tu teléfono: gráficos, estadísticas y secciones clínicas para presión arterial, glucosa, entrenamientos, sueño y seguimiento del ciclo. Compártelo o guárdalo; no se sube nada.',
           accent: '#4f5d9e'
         },
         {
           title: 'Seguimiento del ciclo que sigue siendo tuyo',
-          text: 'Registra flujo, pruebas de ovulación, moco cervical y temperatura basal. Los días de periodo y las predicciones del siguiente se calculan en el dispositivo, y todo vive solo en Health Connect tras su propio permiso.',
+          text: 'Un registro diario de sangrado, dolor, ánimo, energía, síntomas, notas y tests, una cosa cada vez. Los rangos de la próxima regla salen de tu propio historial, una pauta de píldora anticonceptiva te recuerda los días de toma, y Health Connect guarda sus registros mientras el diario se queda en tu teléfono tras su propio permiso.',
           accent: '#b03a5b'
         },
         {
