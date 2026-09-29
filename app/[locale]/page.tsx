@@ -2,7 +2,7 @@ import Image from 'next/image'
 import type { CSSProperties } from 'react'
 import { notFound } from 'next/navigation'
 import { LanguageSwitcher } from '@/app/components/LanguageSwitcher'
-import { isLocale, type Locale } from '@/lib/i18n'
+import { isLocale, localeTags, type Locale } from '@/lib/i18n'
 import { getMessages } from '@/lib/messages'
 
 const docsUrl = 'https://docs.openvitals.health'
@@ -18,11 +18,15 @@ const playStoreUrl =
 const fdroidUrl = 'https://f-droid.org/en/packages/tech.mmarca.openvitals/'
 const healthConnectDocsUrl = `${docsUrl}/app/health-connect`
 
-const installHrefs = {
-  playStore: playStoreUrl,
-  fdroid: fdroidUrl,
-  releases: releasesUrl
-} as const
+/** The Play listing in the page's language; each app language has one. */
+function playStoreHref(locale: Locale) {
+  return `${playStoreUrl}&hl=${localeTags[locale].replace('-', '_')}`
+}
+
+function installHref(key: 'playStore' | 'fdroid' | 'releases', locale: Locale) {
+  if (key === 'playStore') return playStoreHref(locale)
+  return key === 'fdroid' ? fdroidUrl : releasesUrl
+}
 
 function ArrowIcon() {
   return (
@@ -107,7 +111,7 @@ export default async function Home({
   const copy = getMessages(locale)
   // Review dates are rendered as "August 2026" / "agosto de 2026", in UTC so
   // the ISO day never shifts across the server's timezone.
-  const reviewDate = new Intl.DateTimeFormat(locale, {
+  const reviewDate = new Intl.DateTimeFormat(localeTags[locale], {
     year: 'numeric',
     month: 'long',
     timeZone: 'UTC'
@@ -140,13 +144,13 @@ export default async function Home({
       <section className="hero" id="top">
         <div className="hero-media" aria-hidden="true">
           <PhoneShot
-            src="/images/dashboard.png"
+            src={`/images/screens/${locale}/dashboard.png`}
             alt=""
             priority
             className="phone-shot-primary"
           />
           <PhoneShot
-            src="/images/daily-readiness.png"
+            src={`/images/screens/${locale}/steps-day.png`}
             alt=""
             priority
             className="phone-shot-secondary"
@@ -157,7 +161,7 @@ export default async function Home({
           <p className="eyebrow">{copy.hero.eyebrow}</p>
           <h1>OpenVitals</h1>
           <p className="hero-lede">{copy.hero.lede}</p>
-          <div className="hero-actions" aria-label="OpenVitals actions">
+          <div className="hero-actions" aria-label={copy.hero.actionsLabel}>
             <a className="button button-primary" href={`/${locale}#install`}>
               {copy.hero.install}
               <ArrowIcon />
@@ -269,7 +273,7 @@ export default async function Home({
             <h2>{copy.reviews.title}</h2>
             <p className="section-text">{copy.reviews.text}</p>
           </div>
-          <a className="text-link" href={playStoreUrl}>
+          <a className="text-link" href={playStoreHref(locale)}>
             {copy.reviews.link}
             <ExternalIcon />
           </a>
@@ -318,7 +322,7 @@ export default async function Home({
           {copy.install.cards.map((card) => (
             <a
               className="install-card"
-              href={installHrefs[card.hrefKey]}
+              href={installHref(card.hrefKey, locale)}
               key={card.title}
             >
               <span className="badge-frame">
@@ -346,7 +350,7 @@ export default async function Home({
           <p>{copy.support.text}</p>
         </div>
         <div className="support-actions" aria-label={copy.support.actionsLabel}>
-          <a className="button button-primary" href={playStoreUrl}>
+          <a className="button button-primary" href={playStoreHref(locale)}>
             {copy.support.review}
             <ExternalIcon />
           </a>
