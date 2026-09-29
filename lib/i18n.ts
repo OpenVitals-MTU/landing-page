@@ -1,4 +1,20 @@
-export const locales = ['en', 'es'] as const
+/** The app's languages, in its picker's order. `pt` is European Portuguese, `zh` Simplified Chinese. */
+export const locales = [
+  'en',
+  'cs',
+  'de',
+  'es',
+  'et',
+  'fi',
+  'fr',
+  'gl',
+  'it',
+  'ja',
+  'pl',
+  'pt',
+  'ru',
+  'zh'
+] as const
 
 export type Locale = (typeof locales)[number]
 
@@ -8,11 +24,59 @@ export const localeCookieName = 'NEXT_LOCALE'
 
 export const localeLabels: Record<Locale, string> = {
   en: 'English',
-  es: 'Español'
+  cs: 'Čeština',
+  de: 'Deutsch',
+  es: 'Español',
+  et: 'Eesti',
+  fi: 'Suomi',
+  fr: 'Français',
+  gl: 'Galego',
+  it: 'Italiano',
+  ja: '日本語',
+  pl: 'Polski',
+  pt: 'Português',
+  ru: 'Русский',
+  zh: '简体中文'
+}
+
+/** Full language tag, for `<html lang>`, hreflang and date formats. */
+export const localeTags: Record<Locale, string> = {
+  en: 'en',
+  cs: 'cs',
+  de: 'de',
+  es: 'es',
+  et: 'et',
+  fi: 'fi',
+  fr: 'fr',
+  gl: 'gl',
+  it: 'it',
+  ja: 'ja',
+  pl: 'pl',
+  pt: 'pt-PT',
+  ru: 'ru',
+  zh: 'zh-CN'
+}
+
+/** Open Graph locale. */
+export const ogLocales: Record<Locale, string> = {
+  en: 'en_US',
+  cs: 'cs_CZ',
+  de: 'de_DE',
+  es: 'es_ES',
+  et: 'et_EE',
+  fi: 'fi_FI',
+  fr: 'fr_FR',
+  gl: 'gl_ES',
+  it: 'it_IT',
+  ja: 'ja_JP',
+  pl: 'pl_PL',
+  pt: 'pt_PT',
+  ru: 'ru_RU',
+  zh: 'zh_CN'
 }
 
 export function isLocale(value: string | undefined | null): value is Locale {
-  return value === 'en' || value === 'es'
+  return (locales as readonly string[]).includes(value ?? '')
 }
 
 /** Prefer an explicit cookie, then Accept-Language, then English. */

@@ -1,7 +1,7 @@
 import type { Metadata, Viewport } from 'next'
 import type { ReactNode } from 'react'
 import { notFound } from 'next/navigation'
-import { isLocale, locales, type Locale } from '@/lib/i18n'
+import { isLocale, localeTags, locales, ogLocales, type Locale } from '@/lib/i18n'
 import { getMessages } from '@/lib/messages'
 import '../globals.css'
 
@@ -35,8 +35,7 @@ export async function generateMetadata({
     alternates: {
       canonical: `/${locale}`,
       languages: {
-        en: '/en',
-        es: '/es',
+        ...Object.fromEntries(locales.map((code) => [localeTags[code], `/${code}`])),
         'x-default': '/en'
       }
     },
@@ -47,20 +46,20 @@ export async function generateMetadata({
       siteName: 'OpenVitals',
       images: [
         {
-          url: '/images/dashboard.png',
-          width: 1440,
-          height: 3120,
-          alt: 'OpenVitals dashboard screenshot'
+          url: `/images/screens/${locale}/dashboard.png`,
+          width: 720,
+          height: 1280,
+          alt: copy.meta.title
         }
       ],
-      locale: locale === 'es' ? 'es_ES' : 'en_US',
+      locale: ogLocales[locale],
       type: 'website'
     },
     twitter: {
       card: 'summary_large_image',
       title: 'OpenVitals',
       description: copy.meta.twitterDescription,
-      images: ['/images/dashboard.png']
+      images: [`/images/screens/${locale}/dashboard.png`]
     },
     icons: {
       icon: '/images/openvitals-logo.png',
@@ -81,7 +80,7 @@ export default async function LocaleLayout({
   const locale: Locale = rawLocale
 
   return (
-    <html lang={locale}>
+    <html lang={localeTags[locale]}>
       <body>{children}</body>
     </html>
   )
