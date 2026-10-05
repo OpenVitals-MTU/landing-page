@@ -112,7 +112,7 @@ const cs: Messages = {
       },
       {
         title: 'Zapisujte hodnoty, které znáte jen vy',
-        text: 'Hmotnost, výška, krevní tlak s okolnostmi měření a kategoriemi podle doporučení, které si vyberete (ACC/AHA, ESH, ESC nebo ISH), HRV, glykémie, jídla, nápoje, potraviny, které jednou zadáte i s živinami a pak zapisujete po porcích, a minuty všímavosti. Rychlé ruční zadávání s připomínkami a widgety na domovské obrazovce.',
+        text: 'Hmotnost, výška, krevní tlak s okolnostmi měření a kategoriemi podle doporučení, které si vyberete (ACC/AHA, ESH, ESC nebo ISH), HRV, glykémie, jídla, nápoje, potraviny, které jednou zadáte i s živinami a pak zapisujete po porcích, denní součty libovolné živiny zadané přímo a minuty všímavosti. Rychlé ruční zadávání s připomínkami a widgety na domovské obrazovce.',
         accent: '#1f9d55'
       },
       {

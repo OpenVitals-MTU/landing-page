@@ -112,7 +112,7 @@ const et: Messages = {
       },
       {
         title: 'Logi numbrid, mida tead ainult sina',
-        text: 'Kaal, pikkus, vererõhk koos mõõtmisolukorra ja sinu valitud juhise järgi määratud kategooriaga (ACC/AHA, ESH, ESC või ISH), HRV, veresuhkur, toidukorrad, joogid, toidud, mille toitained määrad ühe korra ja mida logid portsjonite kaupa, ning teadveloleku minutid. Kiire käsitsi sisestus koos meeldetuletuste ja avakuva vidinatega.',
+        text: 'Kaal, pikkus, vererõhk koos mõõtmisolukorra ja sinu valitud juhise järgi määratud kategooriaga (ACC/AHA, ESH, ESC või ISH), HRV, veresuhkur, toidukorrad, joogid, toidud, mille toitained määrad ühe korra ja mida logid portsjonite kaupa, otse sisestatud mis tahes toitaine päevased kogused ning teadveloleku minutid. Kiire käsitsi sisestus koos meeldetuletuste ja avakuva vidinatega.',
         accent: '#1f9d55'
       },
       {
