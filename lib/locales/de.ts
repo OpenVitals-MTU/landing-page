@@ -112,7 +112,7 @@ const de: Messages = {
       },
       {
         title: 'Trag die Werte ein, die nur du kennst',
-        text: 'Gewicht, Größe, Blutdruck mit Messumständen und Kategorien nach der Leitlinie deiner Wahl (ACC/AHA, ESH, ESC oder ISH), HRV, Blutzucker, Mahlzeiten, Getränke, Lebensmittel, die du einmal mit ihren Nährstoffen anlegst und dann portionsweise einträgst, und Achtsamkeitsminuten. Schnell von Hand eingetragen, mit Erinnerungen und Widgets für den Startbildschirm.',
+        text: 'Gewicht, Größe, Blutdruck mit Messumständen und Kategorien nach der Leitlinie deiner Wahl (ACC/AHA, ESH, ESC oder ISH), HRV, Blutzucker, Mahlzeiten, Getränke, Lebensmittel, die du einmal mit ihren Nährstoffen anlegst und dann portionsweise einträgst, Tagessummen beliebiger Nährstoffe direkt eingegeben, und Achtsamkeitsminuten. Schnell von Hand eingetragen, mit Erinnerungen und Widgets für den Startbildschirm.',
         accent: '#1f9d55'
       },
       {

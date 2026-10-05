@@ -112,7 +112,7 @@ const fi: Messages = {
       },
       {
         title: 'Kirjaa luvut, jotka vain sinä tiedät',
-        text: 'Paino, pituus, verenpaine mittaustilanteineen ja luokiteltuna valitsemasi ohjeiston mukaan (ACC/AHA, ESH, ESC tai ISH), HRV, verensokeri, ateriat, juomat, ruoat, joiden ravintoaineet määrität kerran ja jotka kirjaat annoksittain, sekä mindfulness-minuutit. Nopea käsin kirjaus, muistutukset ja aloitusnäytön widgetit.',
+        text: 'Paino, pituus, verenpaine mittaustilanteineen ja luokiteltuna valitsemasi ohjeiston mukaan (ACC/AHA, ESH, ESC tai ISH), HRV, verensokeri, ateriat, juomat, ruoat, joiden ravintoaineet määrität kerran ja jotka kirjaat annoksittain, minkä tahansa ravintoaineen päiväsummat suoraan syötettyinä sekä mindfulness-minuutit. Nopea käsin kirjaus, muistutukset ja aloitusnäytön widgetit.',
         accent: '#1f9d55'
       },
       {

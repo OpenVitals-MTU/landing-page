@@ -112,7 +112,7 @@ const pt: Messages = {
       },
       {
         title: 'Registe os números que mais ninguém conhece',
-        text: 'Peso, altura, tensão arterial com o contexto da medição e categorias segundo a diretriz que escolher (ACC/AHA, ESH, ESC ou ISH), VFC, glicemia, refeições, bebidas, alimentos que define uma vez com os respetivos nutrientes e regista por porção, e minutos de atenção plena. Registo manual rápido, com lembretes e widgets no ecrã inicial.',
+        text: 'Peso, altura, tensão arterial com o contexto da medição e categorias segundo a diretriz que escolher (ACC/AHA, ESH, ESC ou ISH), VFC, glicemia, refeições, bebidas, alimentos que define uma vez com os respetivos nutrientes e regista por porção, totais diários de qualquer nutriente escritos diretamente, e minutos de atenção plena. Registo manual rápido, com lembretes e widgets no ecrã inicial.',
         accent: '#1f9d55'
       },
       {

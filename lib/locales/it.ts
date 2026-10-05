@@ -112,7 +112,7 @@ const it: Messages = {
       },
       {
         title: 'Annota i valori che conosci solo tu',
-        text: 'Peso, altezza, pressione sanguigna con il contesto della misurazione e le categorie della linea guida che scegli (ACC/AHA, ESH, ESC o ISH), HRV, glucosio nel sangue, pasti, bevande, alimenti che definisci una volta con i loro nutrienti e registri per porzione, e minuti di consapevolezza. Inserimento manuale rapido, con promemoria e widget per la schermata Home.',
+        text: 'Peso, altezza, pressione sanguigna con il contesto della misurazione e le categorie della linea guida che scegli (ACC/AHA, ESH, ESC o ISH), HRV, glucosio nel sangue, pasti, bevande, alimenti che definisci una volta con i loro nutrienti e registri per porzione, totali giornalieri di qualsiasi nutriente inseriti direttamente, e minuti di consapevolezza. Inserimento manuale rapido, con promemoria e widget per la schermata Home.',
         accent: '#1f9d55'
       },
       {

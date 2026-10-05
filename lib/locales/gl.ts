@@ -112,7 +112,7 @@ const gl: Messages = {
       },
       {
         title: 'Rexistra os números que só ti coñeces',
-        text: 'Peso, altura, presión arterial co seu contexto de medición e categorías segundo a guía que escollas (ACC/AHA, ESH, ESC ou ISH), VFC, glicosa en sangue, comidas, bebidas, alimentos que defines unha vez cos seus nutrientes e rexistras por porción, e minutos de atención plena. Entrada manual rápida, con recordatorios e widgets na pantalla de inicio.',
+        text: 'Peso, altura, presión arterial co seu contexto de medición e categorías segundo a guía que escollas (ACC/AHA, ESH, ESC ou ISH), VFC, glicosa en sangue, comidas, bebidas, alimentos que defines unha vez cos seus nutrientes e rexistras por porción, totais diarios de calquera nutriente escritos directamente, e minutos de atención plena. Entrada manual rápida, con recordatorios e widgets na pantalla de inicio.',
         accent: '#1f9d55'
       },
       {

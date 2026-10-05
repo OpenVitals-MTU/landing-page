@@ -112,7 +112,7 @@ const fr: Messages = {
       },
       {
         title: "Notez les chiffres que personne d'autre ne connaît",
-        text: "Poids, taille, tension artérielle avec son contexte de mesure et ses catégories selon les recommandations de votre choix (ACC/AHA, ESH, ESC ou ISH), VFC, glycémie, repas, boissons, aliments définis une fois avec leurs nutriments puis notés par portion, et minutes de pleine conscience. Saisie manuelle rapide, avec rappels et widgets pour l'écran d'accueil.",
+        text: "Poids, taille, tension artérielle avec son contexte de mesure et ses catégories selon les recommandations de votre choix (ACC/AHA, ESH, ESC ou ISH), VFC, glycémie, repas, boissons, aliments définis une fois avec leurs nutriments puis notés par portion, totaux quotidiens de n'importe quel nutriment saisis directement, et minutes de pleine conscience. Saisie manuelle rapide, avec rappels et widgets pour l'écran d'accueil.",
         accent: '#1f9d55'
       },
       {

@@ -112,7 +112,7 @@ const en: Messages = {
       },
       {
         title: 'Log the numbers only you know',
-        text: 'Weight, height, blood pressure with its measurement context and categories from the guideline you choose (ACC/AHA, ESH, ESC, or ISH), HRV, glucose, meals, drinks, foods you define once with their nutrients and log by portion, and mindfulness minutes. Quick manual entry, with reminders and home-screen widgets.',
+        text: 'Weight, height, blood pressure with its measurement context and categories from the guideline you choose (ACC/AHA, ESH, ESC, or ISH), HRV, glucose, meals, drinks, foods you define once with their nutrients and log by portion, daily totals of any nutrient typed in directly, and mindfulness minutes. Quick manual entry, with reminders and home-screen widgets.',
         accent: '#1f9d55'
       },
       {
