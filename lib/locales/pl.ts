@@ -60,7 +60,7 @@ const pl: Messages = {
       },
       {
         title: 'Otwarty kod źródłowy',
-        text: 'Aplikacja na Androida i dokumentacja są dostępne na Codebergu.'
+        text: 'Aplikacja na Androida i dokumentacja są dostępne na GitHubie.'
       }
     ]
   },
@@ -254,11 +254,11 @@ const pl: Messages = {
         alt: 'Pobierz z F-Droid'
       },
       {
-        title: 'Wydania na Codebergu',
+        title: 'Wydania na GitHubie',
         text: 'Pobierz podpisane pliki APK bezpośrednio od projektu.',
         hrefKey: 'releases',
-        badge: '/images/codeberg-releases-badge.svg',
-        alt: 'Pobierz z Codeberga'
+        badge: '/images/github-releases-badge.svg',
+        alt: 'Pobierz z GitHuba'
       }
     ]
   },

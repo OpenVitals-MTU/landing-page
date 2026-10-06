@@ -60,7 +60,7 @@ const fi: Messages = {
       },
       {
         title: 'Avoin lähdekoodi',
-        text: 'Android-sovellus ja dokumentaatio löytyvät Codebergistä.'
+        text: 'Android-sovellus ja dokumentaatio löytyvät GitHubista.'
       }
     ]
   },
@@ -254,11 +254,11 @@ const fi: Messages = {
         alt: 'Lataa F-Droidista'
       },
       {
-        title: 'Julkaisut Codebergissä',
+        title: 'Julkaisut GitHubissa',
         text: 'Lataa allekirjoitetut APK-tiedostot suoraan projektilta.',
         hrefKey: 'releases',
-        badge: '/images/codeberg-releases-badge.svg',
-        alt: 'Lataa Codebergistä'
+        badge: '/images/github-releases-badge.svg',
+        alt: 'Lataa GitHubista'
       }
     ]
   },

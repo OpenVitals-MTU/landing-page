@@ -60,7 +60,7 @@ const ja: Messages = {
       },
       {
         title: 'オープンソース',
-        text: 'Android アプリとドキュメントは Codeberg で公開しています。'
+        text: 'Android アプリとドキュメントは GitHub で公開しています。'
       }
     ]
   },
@@ -254,11 +254,11 @@ const ja: Messages = {
         alt: 'F-Droid で手に入れよう'
       },
       {
-        title: 'Codeberg のリリース',
+        title: 'GitHub のリリース',
         text: '署名付きの APK をプロジェクトから直接ダウンロードできます。',
         hrefKey: 'releases',
-        badge: '/images/codeberg-releases-badge.svg',
-        alt: 'Codeberg で手に入れよう'
+        badge: '/images/github-releases-badge.svg',
+        alt: 'GitHub で手に入れよう'
       }
     ]
   },

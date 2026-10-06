@@ -60,7 +60,7 @@ const ru: Messages = {
       },
       {
         title: 'Открытый код',
-        text: 'Приложение для Android и документация доступны на Codeberg.'
+        text: 'Приложение для Android и документация доступны на GitHub.'
       }
     ]
   },
@@ -254,11 +254,11 @@ const ru: Messages = {
         alt: 'Доступно в F-Droid'
       },
       {
-        title: 'Выпуски на Codeberg',
+        title: 'Выпуски на GitHub',
         text: 'Скачайте подписанные APK-файлы прямо у проекта.',
         hrefKey: 'releases',
-        badge: '/images/codeberg-releases-badge.svg',
-        alt: 'Доступно на Codeberg'
+        badge: '/images/github-releases-badge.svg',
+        alt: 'Доступно на GitHub'
       }
     ]
   },
