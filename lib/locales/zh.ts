@@ -60,7 +60,7 @@ const zh: Messages = {
       },
       {
         title: '开源',
-        text: 'Android 应用和文档都在 Codeberg 上公开。'
+        text: 'Android 应用和文档都在 GitHub 上公开。'
       }
     ]
   },
@@ -254,11 +254,11 @@ const zh: Messages = {
         alt: '在 F-Droid 上获取'
       },
       {
-        title: 'Codeberg 发布版本',
+        title: 'GitHub 发布版本',
         text: '直接从项目下载已签名的 APK 发布版本。',
         hrefKey: 'releases',
-        badge: '/images/codeberg-releases-badge.svg',
-        alt: '在 Codeberg 上获取'
+        badge: '/images/github-releases-badge.svg',
+        alt: '在 GitHub 上获取'
       }
     ]
   },

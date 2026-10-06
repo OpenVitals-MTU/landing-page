@@ -565,7 +565,7 @@ figcaption {
   object-fit: contain;
 }
 
-.install-card[href*="codeberg.org"] .badge-frame img {
+.install-card[href*="github.com"] .badge-frame img {
   height: auto;
   max-width: none;
   width: 184px;

@@ -60,7 +60,7 @@ const et: Messages = {
       },
       {
         title: 'Avatud lähtekood',
-        text: 'Androidi rakendus ja dokumentatsioon on saadaval Codebergis.'
+        text: 'Androidi rakendus ja dokumentatsioon on saadaval GitHubis.'
       }
     ]
   },
@@ -254,11 +254,11 @@ const et: Messages = {
         alt: 'Laadi alla F-Droidist'
       },
       {
-        title: 'Codebergi väljalasked',
+        title: 'GitHubi väljalasked',
         text: 'Laadi allkirjastatud APK-failid otse projektist.',
         hrefKey: 'releases',
-        badge: '/images/codeberg-releases-badge.svg',
-        alt: 'Laadi alla Codebergist'
+        badge: '/images/github-releases-badge.svg',
+        alt: 'Laadi alla GitHubist'
       }
     ]
   },

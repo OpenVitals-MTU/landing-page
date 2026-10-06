@@ -60,7 +60,7 @@ const cs: Messages = {
       },
       {
         title: 'Otevřený zdrojový kód',
-        text: 'Aplikace pro Android i dokumentace jsou k dispozici na Codebergu.'
+        text: 'Aplikace pro Android i dokumentace jsou k dispozici na GitHubu.'
       }
     ]
   },
@@ -254,11 +254,11 @@ const cs: Messages = {
         alt: 'Nyní na F-Droid'
       },
       {
-        title: 'Vydání na Codebergu',
+        title: 'Vydání na GitHubu',
         text: 'Stáhněte si podepsané soubory APK přímo od projektu.',
         hrefKey: 'releases',
-        badge: '/images/codeberg-releases-badge.svg',
-        alt: 'Nyní na Codebergu'
+        badge: '/images/github-releases-badge.svg',
+        alt: 'Nyní na GitHubu'
       }
     ]
   },
