@@ -19,3 +19,7 @@ npm start
 ```
 
 Fly.io deployment uses `fly.toml` and the included multi-stage `Dockerfile`.
+
+## License
+
+The OpenVitals landing page is licensed under the [`GNU Affero General Public License v3.0 or later`](LICENSE).
