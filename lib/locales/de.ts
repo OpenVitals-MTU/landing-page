@@ -107,7 +107,7 @@ const de: Messages = {
       },
       {
         title: 'Funktioniert mit deiner Uhr',
-        text: 'Verbinde jedes Wearable über Gadgetbridge oder die App des Herstellers: Synchronisiere Benachrichtigungen und eingehende Anrufe, Live-Herzfrequenz, Wetter, Kalender und Musiksteuerung über Bluetooth, auf Wunsch nach Zeitplan. Alles läuft über Health Connect in einer gemeinsamen Übersicht zusammen.',
+        text: 'Verbinde jedes Wearable über Gadgetbridge oder die App des Herstellers: Synchronisiere Benachrichtigungen und eingehende Anrufe, Live-Herzfrequenz, Wetter, Kalender und Musiksteuerung über Bluetooth, auf Wunsch nach Zeitplan. Alles läuft über Health Connect in einer gemeinsamen Übersicht zusammen. Stell dich auf eine unterstützte Xiaomi-Waage, und die Messung landet in Health Connect, auch bei geschlossener App.',
         accent: '#a07b00'
       },
       {

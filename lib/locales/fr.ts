@@ -107,7 +107,7 @@ const fr: Messages = {
       },
       {
         title: 'Fonctionne avec votre montre',
-        text: "Associez n'importe quel objet connecté via Gadgetbridge ou l'application du fabricant : synchronisez en Bluetooth les notifications et les appels entrants, la fréquence cardiaque en direct, la météo, le calendrier et les commandes de musique, à intervalles réguliers si vous le souhaitez. Tout se synchronise via Santé Connect dans un seul tableau de bord.",
+        text: "Associez n'importe quel objet connecté via Gadgetbridge ou l'application du fabricant : synchronisez en Bluetooth les notifications et les appels entrants, la fréquence cardiaque en direct, la météo, le calendrier et les commandes de musique, à intervalles réguliers si vous le souhaitez. Tout se synchronise via Santé Connect dans un seul tableau de bord. Montez sur une balance Xiaomi compatible et la pesée arrive dans Santé Connect, même appli fermée.",
         accent: '#a07b00'
       },
       {

@@ -107,7 +107,7 @@ const et: Messages = {
       },
       {
         title: 'Töötab sinu kellaga',
-        text: "Ühenda ükskõik milline kantav seade Gadgetbridge'i või tootja rakenduse kaudu: sünkrooni Bluetoothi kaudu teavitused ja sissetulevad kõned, reaalajas pulss, ilm, kalender ja muusika juhtimine, soovi korral ajakava järgi. Kõik sünkroonitakse Health Connecti kaudu ühte ühisesse kokkuvõttesse.",
+        text: "Ühenda ükskõik milline kantav seade Gadgetbridge'i või tootja rakenduse kaudu: sünkrooni Bluetoothi kaudu teavitused ja sissetulevad kõned, reaalajas pulss, ilm, kalender ja muusika juhtimine, soovi korral ajakava järgi. Kõik sünkroonitakse Health Connecti kaudu ühte ühisesse kokkuvõttesse. Astu toetatud Xiaomi kaalule ja kaalumine jõuab Health Connecti, ka suletud rakendusega.",
         accent: '#a07b00'
       },
       {

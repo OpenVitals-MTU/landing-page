@@ -107,7 +107,7 @@ const cs: Messages = {
       },
       {
         title: 'Funguje s vašimi hodinkami',
-        text: 'Připojte jakékoli nositelné zařízení přes Gadgetbridge nebo aplikaci výrobce: přes Bluetooth synchronizujte oznámení a příchozí hovory, tep v reálném čase, počasí, kalendář a ovládání hudby, a pokud chcete, i automaticky v pravidelných intervalech. Vše se synchronizuje přes Health Connect do jednoho společného přehledu.',
+        text: 'Připojte jakékoli nositelné zařízení přes Gadgetbridge nebo aplikaci výrobce: přes Bluetooth synchronizujte oznámení a příchozí hovory, tep v reálném čase, počasí, kalendář a ovládání hudby, a pokud chcete, i automaticky v pravidelných intervalech. Vše se synchronizuje přes Health Connect do jednoho společného přehledu. Stoupněte si na podporovanou váhu Xiaomi a vážení dorazí do Health Connect, i když je aplikace zavřená.',
         accent: '#a07b00'
       },
       {
