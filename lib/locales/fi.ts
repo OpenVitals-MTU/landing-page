@@ -107,7 +107,7 @@ const fi: Messages = {
       },
       {
         title: 'Toimii kellosi kanssa',
-        text: 'Yhdistä mikä tahansa puettava laite Gadgetbridgen tai valmistajan sovelluksen kautta: synkronoi Bluetoothilla ilmoitukset ja saapuvat puhelut, reaaliaikainen syke, sää, kalenteri ja musiikin hallinta, halutessasi ajastetusti. Kaikki synkronoituu Health Connectin kautta yhteen yhtenäiseen yhteenvetoon.',
+        text: 'Yhdistä mikä tahansa puettava laite Gadgetbridgen tai valmistajan sovelluksen kautta: synkronoi Bluetoothilla ilmoitukset ja saapuvat puhelut, reaaliaikainen syke, sää, kalenteri ja musiikin hallinta, halutessasi ajastetusti. Kaikki synkronoituu Health Connectin kautta yhteen yhtenäiseen yhteenvetoon. Astu tuetulle Xiaomi-vaa’alle, ja punnitus päätyy Health Connectiin, vaikka sovellus on kiinni.',
         accent: '#a07b00'
       },
       {

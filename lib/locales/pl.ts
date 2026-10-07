@@ -107,7 +107,7 @@ const pl: Messages = {
       },
       {
         title: 'Działa z Twoim zegarkiem',
-        text: 'Połącz dowolne urządzenie noszone przez Gadgetbridge lub aplikację producenta: synchronizuj przez Bluetooth powiadomienia i przychodzące połączenia, tętno na żywo, pogodę, kalendarz i sterowanie muzyką, a jeśli chcesz, także automatycznie w regularnych odstępach. Wszystko synchronizuje się przez Health Connect do jednego wspólnego panelu.',
+        text: 'Połącz dowolne urządzenie noszone przez Gadgetbridge lub aplikację producenta: synchronizuj przez Bluetooth powiadomienia i przychodzące połączenia, tętno na żywo, pogodę, kalendarz i sterowanie muzyką, a jeśli chcesz, także automatycznie w regularnych odstępach. Wszystko synchronizuje się przez Health Connect do jednego wspólnego panelu. Stań na obsługiwanej wadze Xiaomi, a ważenie trafi do Health Connect, nawet przy zamkniętej aplikacji.',
         accent: '#a07b00'
       },
       {

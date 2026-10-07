@@ -107,7 +107,7 @@ const en: Messages = {
       },
       {
         title: 'Works with your watch',
-        text: "Connect any wearable through Gadgetbridge or your vendor's app: sync notifications and ringing calls, live heart rate, weather, calendar, and music controls over Bluetooth, on a schedule if you want. Everything syncs through Health Connect into one unified dashboard.",
+        text: "Connect any wearable through Gadgetbridge or your vendor's app: sync notifications and ringing calls, live heart rate, weather, calendar, and music controls over Bluetooth, on a schedule if you want. Everything syncs through Health Connect into one unified dashboard. Step on a supported Xiaomi scale and the weigh-in lands in Health Connect, even with the app closed.",
         accent: '#a07b00'
       },
       {

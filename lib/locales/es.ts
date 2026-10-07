@@ -107,7 +107,7 @@ const es: Messages = {
       },
       {
         title: 'Funciona con tu reloj',
-        text: 'Conecta cualquier wearable a través de Gadgetbridge o la app del fabricante: sincroniza notificaciones y llamadas entrantes, frecuencia cardiaca en vivo, tiempo, calendario y controles de música por Bluetooth, con horario automático si quieres. Todo sincroniza a través de Health Connect en un panel unificado.',
+        text: 'Conecta cualquier wearable a través de Gadgetbridge o la app del fabricante: sincroniza notificaciones y llamadas entrantes, frecuencia cardiaca en vivo, tiempo, calendario y controles de música por Bluetooth, con horario automático si quieres. Todo sincroniza a través de Health Connect en un panel unificado. Súbete a una báscula Xiaomi compatible y el pesaje llega a Health Connect, incluso con la app cerrada.',
         accent: '#a07b00'
       },
       {
