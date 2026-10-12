@@ -97,7 +97,7 @@ const pl: Messages = {
       },
       {
         title: 'Zaimportuj to, co już masz',
-        text: 'Wczytaj eksporty z Apple Health oraz pliki FIT, GPX, KML/KMZ, TCX i CSV, pojedynczo albo całymi folderami. Historia zebrana gdzie indziej przechodzi razem z Tobą.',
+        text: 'Wczytaj eksporty z Apple Health oraz pliki FIT, GPX, KML/KMZ, TCX i CSV, pojedynczo albo całymi folderami. Plik CSV może zawierać pomiary z wagi albo arkusz posiłków. Historia zebrana gdzie indziej przechodzi razem z Tobą.',
         accent: '#2f6f9f'
       },
       {
@@ -117,7 +117,7 @@ const pl: Messages = {
       },
       {
         title: 'Raport zdrowotny, który wręczysz lekarzowi',
-        text: 'Wybierz wskaźniki i okres, a aplikacja utworzy PDF na Twoim telefonie: wykresy, statystyki i sekcje kliniczne dotyczące ciśnienia krwi, glukozy, treningów, snu i śledzenia cyklu. Udostępnij go lub zapisz; nic nie jest nigdzie wysyłane.',
+        text: 'Wybierz wskaźniki i okres, a aplikacja utworzy PDF na Twoim telefonie: wykresy, statystyki i sekcje kliniczne dotyczące ciśnienia krwi, glukozy, treningów, snu i śledzenia cyklu. Każdy składnik, który zapisujesz, od błonnika po selen, może mieć własny wykres. Udostępnij go lub zapisz; nic nie jest nigdzie wysyłane.',
         accent: '#4f5d9e'
       },
       {

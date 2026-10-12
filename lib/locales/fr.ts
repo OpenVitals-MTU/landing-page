@@ -97,7 +97,7 @@ const fr: Messages = {
       },
       {
         title: 'Importez ce que vous avez déjà',
-        text: "Importez vos exports Apple Santé et vos fichiers FIT, GPX, KML/KMZ, TCX et CSV, un par un ou par dossiers entiers. L'historique que vous avez construit ailleurs vous suit.",
+        text: "Importez vos exports Apple Santé et vos fichiers FIT, GPX, KML/KMZ, TCX et CSV, un par un ou par dossiers entiers. Un CSV peut contenir les pesées d'une balance ou un tableau de vos repas. L'historique que vous avez construit ailleurs vous suit.",
         accent: '#2f6f9f'
       },
       {
@@ -117,7 +117,7 @@ const fr: Messages = {
       },
       {
         title: 'Un rapport à remettre à votre médecin',
-        text: "Choisissez des mesures et une période, et l'application crée un PDF sur votre téléphone : graphiques, statistiques et sections cliniques pour la tension artérielle, la glycémie, les entraînements, le sommeil et le suivi du cycle. Partagez-le ou enregistrez-le ; rien n'est mis en ligne.",
+        text: "Choisissez des mesures et une période, et l'application crée un PDF sur votre téléphone : graphiques, statistiques et sections cliniques pour la tension artérielle, la glycémie, les entraînements, le sommeil et le suivi du cycle. Chaque nutriment que vous saisissez, des fibres au sélénium, peut avoir son propre graphique. Partagez-le ou enregistrez-le ; rien n'est mis en ligne.",
         accent: '#4f5d9e'
       },
       {

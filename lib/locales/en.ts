@@ -97,7 +97,7 @@ const en: Messages = {
       },
       {
         title: 'Import what you already have',
-        text: 'Bring in Apple Health exports, FIT, GPX, KML/KMZ, TCX, and CSV files, one at a time or whole folders. The history you built elsewhere comes with you.',
+        text: 'Bring in Apple Health exports, FIT, GPX, KML/KMZ, TCX, and CSV files, one at a time or whole folders. A CSV can hold a scale\'s weigh-ins or a spreadsheet of meals. The history you built elsewhere comes with you.',
         accent: '#2f6f9f'
       },
       {
@@ -117,7 +117,7 @@ const en: Messages = {
       },
       {
         title: 'A report your doctor can hold',
-        text: 'Pick metrics and a time range, and the app builds a PDF on your phone: charts, statistics, and clinical sections for blood pressure, glucose, workouts, sleep, and cycle tracking. Share it or save it; nothing is uploaded.',
+        text: 'Pick metrics and a time range, and the app builds a PDF on your phone: charts, statistics, and clinical sections for blood pressure, glucose, workouts, sleep, and cycle tracking. Every nutrient you log, from fibre to selenium, can get a chart of its own. Share it or save it; nothing is uploaded.',
         accent: '#4f5d9e'
       },
       {

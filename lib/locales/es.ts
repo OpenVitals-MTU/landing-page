@@ -97,7 +97,7 @@ const es: Messages = {
       },
       {
         title: 'Importa lo que ya tienes',
-        text: 'Trae exportaciones de Apple Health, y archivos FIT, GPX, KML/KMZ, TCX y CSV, de uno en uno o por carpetas enteras. El historial que construiste en otro sitio te acompaña.',
+        text: 'Trae exportaciones de Apple Health, y archivos FIT, GPX, KML/KMZ, TCX y CSV, de uno en uno o por carpetas enteras. Un CSV puede traer los pesajes de una báscula o una hoja de cálculo de comidas. El historial que construiste en otro sitio te acompaña.',
         accent: '#2f6f9f'
       },
       {
@@ -117,7 +117,7 @@ const es: Messages = {
       },
       {
         title: 'Un informe que tu médico puede tener',
-        text: 'Elige métricas y un intervalo, y la app genera un PDF en tu teléfono: gráficos, estadísticas y secciones clínicas para presión arterial, glucosa, entrenamientos, sueño y seguimiento del ciclo. Compártelo o guárdalo; no se sube nada.',
+        text: 'Elige métricas y un intervalo, y la app genera un PDF en tu teléfono: gráficos, estadísticas y secciones clínicas para presión arterial, glucosa, entrenamientos, sueño y seguimiento del ciclo. Cada nutriente que registras, de la fibra al selenio, puede tener su propio gráfico. Compártelo o guárdalo; no se sube nada.',
         accent: '#4f5d9e'
       },
       {

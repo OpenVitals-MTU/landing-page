@@ -97,7 +97,7 @@ const de: Messages = {
       },
       {
         title: 'Importiere, was du schon hast',
-        text: 'Übernimm Exporte aus Apple Health sowie FIT-, GPX-, KML/KMZ-, TCX- und CSV-Dateien, einzeln oder als ganze Ordner. Was du anderswo gesammelt hast, kommt mit.',
+        text: 'Übernimm Exporte aus Apple Health sowie FIT-, GPX-, KML/KMZ-, TCX- und CSV-Dateien, einzeln oder als ganze Ordner. Eine CSV-Datei kann die Messungen einer Waage oder eine Tabelle deiner Mahlzeiten enthalten. Was du anderswo gesammelt hast, kommt mit.',
         accent: '#2f6f9f'
       },
       {
@@ -117,7 +117,7 @@ const de: Messages = {
       },
       {
         title: 'Ein Gesundheitsbericht für deinen Arzt',
-        text: 'Wähle Messwerte und einen Zeitraum, und die App erstellt auf deinem Telefon ein PDF: Diagramme, Statistiken und klinische Abschnitte zu Blutdruck, Blutzucker, Trainings, Schlaf und Zyklusverfolgung. Teile oder speichere es. Hochgeladen wird nichts.',
+        text: 'Wähle Messwerte und einen Zeitraum, und die App erstellt auf deinem Telefon ein PDF: Diagramme, Statistiken und klinische Abschnitte zu Blutdruck, Blutzucker, Trainings, Schlaf und Zyklusverfolgung. Jeder Nährstoff, den du erfasst, von Ballaststoffen bis Selen, kann ein eigenes Diagramm bekommen. Teile oder speichere es. Hochgeladen wird nichts.',
         accent: '#4f5d9e'
       },
       {

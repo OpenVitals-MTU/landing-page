@@ -97,7 +97,7 @@ const et: Messages = {
       },
       {
         title: 'Too kaasa, mis sul juba olemas on',
-        text: 'Impordi Apple Healthi ekspordid ning FIT-, GPX-, KML/KMZ-, TCX- ja CSV-failid ükshaaval või terve kausta korraga. Mujal kogunenud ajalugu tuleb sinuga kaasa.',
+        text: 'Impordi Apple Healthi ekspordid ning FIT-, GPX-, KML/KMZ-, TCX- ja CSV-failid ükshaaval või terve kausta korraga. CSV-fail võib sisaldada kaalu mõõtmisi või toidukordade tabelit. Mujal kogunenud ajalugu tuleb sinuga kaasa.',
         accent: '#2f6f9f'
       },
       {
@@ -117,7 +117,7 @@ const et: Messages = {
       },
       {
         title: 'Tervisearuanne, mille saad arstile ulatada',
-        text: 'Vali näitajad ja ajavahemik ning rakendus koostab sinu telefonis PDF-i: graafikud, statistika ja kliinilised osad vererõhu, veresuhkru, treeningute, une ja tsükli jälgimise kohta. Jaga või salvesta see. Midagi ei laadita üles.',
+        text: 'Vali näitajad ja ajavahemik ning rakendus koostab sinu telefonis PDF-i: graafikud, statistika ja kliinilised osad vererõhu, veresuhkru, treeningute, une ja tsükli jälgimise kohta. Iga toitaine, mida sa logid, kiudainetest seleenini, võib saada oma graafiku. Jaga või salvesta see. Midagi ei laadita üles.',
         accent: '#4f5d9e'
       },
       {

@@ -97,7 +97,7 @@ const fi: Messages = {
       },
       {
         title: 'Tuo se, mitä sinulla jo on',
-        text: 'Tuo Apple Health -viennit sekä FIT-, GPX-, KML/KMZ-, TCX- ja CSV-tiedostot yksitellen tai kokonaisina kansioina. Muualla kertynyt historiasi tulee mukanasi.',
+        text: 'Tuo Apple Health -viennit sekä FIT-, GPX-, KML/KMZ-, TCX- ja CSV-tiedostot yksitellen tai kokonaisina kansioina. CSV-tiedostossa voi olla vaa\'an punnitukset tai aterioiden taulukko. Muualla kertynyt historiasi tulee mukanasi.',
         accent: '#2f6f9f'
       },
       {
@@ -117,7 +117,7 @@ const fi: Messages = {
       },
       {
         title: 'Terveysraportti lääkärin käteen',
-        text: 'Valitse mittarit ja aikaväli, niin sovellus koostaa puhelimessasi PDF:n: kaaviot, tilastot ja kliiniset osiot verenpaineesta, verensokerista, treeneistä, unesta ja kuukautiskierron seurannasta. Jaa tai tallenna se. Mitään ei ladata verkkoon.',
+        text: 'Valitse mittarit ja aikaväli, niin sovellus koostaa puhelimessasi PDF:n: kaaviot, tilastot ja kliiniset osiot verenpaineesta, verensokerista, treeneistä, unesta ja kuukautiskierron seurannasta. Jokainen kirjaamasi ravintoaine kuidusta seleeniin voi saada oman kaavionsa. Jaa tai tallenna se. Mitään ei ladata verkkoon.',
         accent: '#4f5d9e'
       },
       {
