@@ -97,7 +97,7 @@ const cs: Messages = {
       },
       {
         title: 'Importujte, co už máte',
-        text: 'Přeneste si exporty z Apple Health a soubory FIT, GPX, KML/KMZ, TCX a CSV, po jednom nebo celé složky. Historie, kterou jste nasbírali jinde, jde s vámi.',
+        text: 'Přeneste si exporty z Apple Health a soubory FIT, GPX, KML/KMZ, TCX a CSV, po jednom nebo celé složky. CSV může obsahovat vážení z váhy i tabulku jídel. Historie, kterou jste nasbírali jinde, jde s vámi.',
         accent: '#2f6f9f'
       },
       {
@@ -117,7 +117,7 @@ const cs: Messages = {
       },
       {
         title: 'Zdravotní zpráva, kterou dáte lékaři do ruky',
-        text: 'Vyberte metriky a období a aplikace vytvoří PDF přímo v telefonu: grafy, statistiky a klinické oddíly pro krevní tlak, glykémii, tréninky, spánek a sledování cyklu. Sdílejte ho, nebo uložte; nic se nikam nenahrává.',
+        text: 'Vyberte metriky a období a aplikace vytvoří PDF přímo v telefonu: grafy, statistiky a klinické oddíly pro krevní tlak, glykémii, tréninky, spánek a sledování cyklu. Každá živina, kterou zapisujete, od vlákniny po selen, může mít vlastní graf. Sdílejte ho, nebo uložte; nic se nikam nenahrává.',
         accent: '#4f5d9e'
       },
       {

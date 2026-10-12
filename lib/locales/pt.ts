@@ -97,7 +97,7 @@ const pt: Messages = {
       },
       {
         title: 'Importe o que já tem',
-        text: 'Traga exportações do Apple Health e ficheiros FIT, GPX, KML/KMZ, TCX e CSV, um de cada vez ou pastas inteiras. O histórico que construiu noutro lado vem consigo.',
+        text: 'Traga exportações do Apple Health e ficheiros FIT, GPX, KML/KMZ, TCX e CSV, um de cada vez ou pastas inteiras. Um CSV pode trazer as pesagens de uma balança ou uma folha de refeições. O histórico que construiu noutro lado vem consigo.',
         accent: '#2f6f9f'
       },
       {
@@ -117,7 +117,7 @@ const pt: Messages = {
       },
       {
         title: 'Um relatório que o seu médico pode ter na mão',
-        text: 'Escolha as métricas e um intervalo de tempo, e a aplicação cria um PDF no seu telemóvel: gráficos, estatísticas e secções clínicas de tensão arterial, glicemia, treinos, sono e registo do ciclo. Partilhe-o ou guarde-o; nada é enviado para a internet.',
+        text: 'Escolha as métricas e um intervalo de tempo, e a aplicação cria um PDF no seu telemóvel: gráficos, estatísticas e secções clínicas de tensão arterial, glicemia, treinos, sono e registo do ciclo. Cada nutriente que regista, da fibra ao selénio, pode ter o seu próprio gráfico. Partilhe-o ou guarde-o; nada é enviado para a internet.',
         accent: '#4f5d9e'
       },
       {

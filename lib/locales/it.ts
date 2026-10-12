@@ -97,7 +97,7 @@ const it: Messages = {
       },
       {
         title: 'Importa quello che hai già',
-        text: 'Aggiungi le esportazioni di Apple Health e i file FIT, GPX, KML/KMZ, TCX e CSV, uno alla volta o per cartelle intere. Lo storico che hai costruito altrove ti segue.',
+        text: 'Aggiungi le esportazioni di Apple Health e i file FIT, GPX, KML/KMZ, TCX e CSV, uno alla volta o per cartelle intere. Un CSV può contenere le pesate di una bilancia o un foglio con i tuoi pasti. Lo storico che hai costruito altrove ti segue.',
         accent: '#2f6f9f'
       },
       {
@@ -117,7 +117,7 @@ const it: Messages = {
       },
       {
         title: 'Un report che il tuo medico può tenere in mano',
-        text: "Scegli le metriche e un intervallo di tempo, e l'app crea un PDF sul tuo telefono: grafici, statistiche e sezioni cliniche per pressione sanguigna, glucosio nel sangue, allenamenti, sonno e tracciamento del ciclo. Condividilo o salvalo: non viene caricato nulla.",
+        text: "Scegli le metriche e un intervallo di tempo, e l'app crea un PDF sul tuo telefono: grafici, statistiche e sezioni cliniche per pressione sanguigna, glucosio nel sangue, allenamenti, sonno e tracciamento del ciclo. Ogni nutriente che registri, dalle fibre al selenio, può avere un suo grafico. Condividilo o salvalo: non viene caricato nulla.",
         accent: '#4f5d9e'
       },
       {
