@@ -33,16 +33,16 @@ export async function generateMetadata({
     },
     description: copy.meta.description,
     alternates: {
-      canonical: `/${locale}`,
+      canonical: `/${locale}/`,
       languages: {
-        ...Object.fromEntries(locales.map((code) => [localeTags[code], `/${code}`])),
-        'x-default': '/en'
+        ...Object.fromEntries(locales.map((code) => [localeTags[code], `/${code}/`])),
+        'x-default': '/en/'
       }
     },
     openGraph: {
       title: 'OpenVitals',
       description: copy.meta.ogDescription,
-      url: `https://openvitals.health/${locale}`,
+      url: `https://openvitals.health/${locale}/`,
       siteName: 'OpenVitals',
       images: [
         {

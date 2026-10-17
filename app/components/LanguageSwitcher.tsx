@@ -1,8 +1,14 @@
 'use client'
 
+import { useEffect } from 'react'
 import { useRouter } from 'next/navigation'
 import type { Locale } from '@/lib/i18n'
-import { localeLabels, locales } from '@/lib/i18n'
+import { localeCookieName, localeLabels, locales } from '@/lib/i18n'
+
+/** Remembers the language for the next visit to `/`. */
+function rememberLocale(locale: Locale) {
+  document.cookie = `${localeCookieName}=${locale}; path=/; max-age=${60 * 60 * 24 * 365}; samesite=lax`
+}
 
 export function LanguageSwitcher({
   locale,
@@ -13,9 +19,14 @@ export function LanguageSwitcher({
 }) {
   const router = useRouter()
 
+  // Every language page remembers its language, as the server's middleware did
+  // before the site went static.
+  useEffect(() => rememberLocale(locale), [locale])
+
   const handleLanguageChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     const newLocale = e.target.value as Locale
-    router.push(`/${newLocale}`)
+    rememberLocale(newLocale)
+    router.push(`/${newLocale}/`)
   }
 
   return (
