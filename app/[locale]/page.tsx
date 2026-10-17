@@ -120,7 +120,7 @@ export default async function Home({
   return (
     <main>
       <header className="site-header" aria-label={copy.nav.primary}>
-        <a className="brand" href={`/${locale}#top`} aria-label={copy.nav.home}>
+        <a className="brand" href={`/${locale}/#top`} aria-label={copy.nav.home}>
           <Image
             src="/images/openvitals-logo.png"
             alt=""
@@ -131,11 +131,11 @@ export default async function Home({
           <span>OpenVitals</span>
         </a>
         <nav>
-          <a href={`/${locale}#privacy`}>{copy.nav.privacy}</a>
-          <a href={`/${locale}#features`}>{copy.nav.features}</a>
+          <a href={`/${locale}/#privacy`}>{copy.nav.privacy}</a>
+          <a href={`/${locale}/#features`}>{copy.nav.features}</a>
           <a href={docsUrl}>{copy.nav.docs}</a>
           <LanguageSwitcher locale={locale} label={copy.nav.language} />
-          <a className="nav-action" href={`/${locale}#install`}>
+          <a className="nav-action" href={`/${locale}/#install`}>
             {copy.nav.install}
           </a>
         </nav>
@@ -162,7 +162,7 @@ export default async function Home({
           <h1>OpenVitals</h1>
           <p className="hero-lede">{copy.hero.lede}</p>
           <div className="hero-actions" aria-label={copy.hero.actionsLabel}>
-            <a className="button button-primary" href={`/${locale}#install`}>
+            <a className="button button-primary" href={`/${locale}/#install`}>
               {copy.hero.install}
               <ArrowIcon />
             </a>
@@ -375,7 +375,7 @@ export default async function Home({
       </section>
 
       <footer className="site-footer">
-        <a className="brand" href={`/${locale}#top`} aria-label={copy.nav.home}>
+        <a className="brand" href={`/${locale}/#top`} aria-label={copy.nav.home}>
           <Image src="/images/openvitals-logo.png" alt="" width={34} height={24} />
           <span>OpenVitals</span>
         </a>

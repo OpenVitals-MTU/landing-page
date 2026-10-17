@@ -12,15 +12,12 @@
   "scripts": {
     "dev": "next dev --webpack",
     "build": "next build --webpack",
-    "prestart": "mkdir -p .next/standalone/.next && rm -rf .next/standalone/public .next/standalone/.next/static && cp -R public .next/standalone/public && cp -R .next/static .next/standalone/.next/static",
-    "start": "HOSTNAME=0.0.0.0 node .next/standalone/server.js",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "next": "16.2.10",
     "react": "19.2.7",
-    "react-dom": "19.2.7",
-    "sharp": "0.35.3"
+    "react-dom": "19.2.7"
   },
   "devDependencies": {
     "@types/node": "22.15.30",
