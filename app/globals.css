@@ -74,7 +74,9 @@ a {
 }
 
 .brand img {
-  width: auto;
+  /* The static export serves the 577px original, so the width the image
+     server's resized logo used to give is set here. */
+  width: 48px;
   height: auto;
   border-radius: 6px;
 }

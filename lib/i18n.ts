@@ -112,5 +112,5 @@ export function resolveLocale(
 }
 
 export function localePath(locale: Locale, hash = ''): string {
-  return `/${locale}${hash}`
+  return `/${locale}/${hash}`
 }
