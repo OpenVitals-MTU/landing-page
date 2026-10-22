@@ -112,7 +112,7 @@ const es: Messages = {
       },
       {
         title: 'Registra los números que solo tú conoces',
-        text: 'Peso, altura, presión arterial con su contexto de medición y categorías según la guía que elijas (ACC/AHA, ESH, ESC o ISH), VFC, glucosa, comidas, bebidas, alimentos que defines una vez con sus nutrientes y registras por porción, totales diarios de cualquier nutriente escritos directamente, y minutos de mindfulness. Entrada manual rápida, con recordatorios y widgets en la pantalla de inicio.',
+        text: 'Todo el pesaje de una báscula de composición corporal, del peso y la grasa al agua corporal, altura, presión arterial con su contexto de medición y categorías según la guía que elijas (ACC/AHA, ESH, ESC o ISH), VFC, glucosa, VO2 máx, comidas, bebidas, alimentos que defines una vez con sus nutrientes y registras por porción, totales diarios de cualquier nutriente escritos directamente, y minutos de mindfulness. Entrada manual rápida, con recordatorios y widgets en la pantalla de inicio.',
         accent: '#1f9d55'
       },
       {

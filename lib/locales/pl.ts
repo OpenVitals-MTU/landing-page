@@ -112,7 +112,7 @@ const pl: Messages = {
       },
       {
         title: 'Zapisuj liczby, które znasz tylko Ty',
-        text: 'Waga, wzrost, ciśnienie krwi z okolicznościami pomiaru i kategoriami według wybranych wytycznych (ACC/AHA, ESH, ESC lub ISH), HRV, glukoza, posiłki, napoje, produkty, które raz definiujesz razem ze składnikami odżywczymi i zapisujesz porcjami, dzienne sumy dowolnych składników odżywczych wpisywane bezpośrednio, oraz minuty mindfulness. Szybkie ręczne wpisy z przypomnieniami i widżetami na ekranie głównym.',
+        text: 'Cały pomiar z wagi analitycznej, od wagi i tłuszczu po wodę w organizmie, wzrost, ciśnienie krwi z okolicznościami pomiaru i kategoriami według wybranych wytycznych (ACC/AHA, ESH, ESC lub ISH), HRV, glukoza, VO2 max, posiłki, napoje, produkty, które raz definiujesz razem ze składnikami odżywczymi i zapisujesz porcjami, dzienne sumy dowolnych składników odżywczych wpisywane bezpośrednio, oraz minuty mindfulness. Szybkie ręczne wpisy z przypomnieniami i widżetami na ekranie głównym.',
         accent: '#1f9d55'
       },
       {
